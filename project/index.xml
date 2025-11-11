@@ -1,0 +1,5 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>My Site – Project</title><link>/project/</link><description>Recent content in Project on My Site</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 11 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="/project/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugo Hextra website (1)</title><link>/project/hugo_hextra_website_1/</link><pubDate>Tue, 11 Nov 2025 00:00:00 +0000</pubDate><guid>/project/hugo_hextra_website_1/</guid><description>
+&lt;p>    This static site was built using &lt;strong>Hugo&lt;/strong> and deployed with &lt;strong>GitHub Pages&lt;/strong>.
+The first blog project began with the &lt;strong>Hextra Starter Template&lt;/strong> as the base theme.
+Deployment is now fully &lt;u>automated&lt;/u> for seamless updates.&lt;/p>
+&lt;p>작성 예정&amp;hellip;&lt;/p></description></item></channel></rss>
