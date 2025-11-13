@@ -3,16 +3,63 @@
 The first blog project began with the &lt;strong>Hextra Starter Template&lt;/strong> as the base theme.
 Deployment is now fully &lt;u>automated&lt;/u> for seamless updates.&lt;/p>
 &lt;h2>Hugo + GitHub Pages&lt;span class="hx:absolute hx:-mt-20" id="hugo--github-pages">&lt;/span>
-&lt;a href="#hugo--github-pages" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;h3>&lt;u>Static web page&lt;/u> vs Dynamic web page&lt;span class="hx:absolute hx:-mt-20" id="static-web-page-vs-dynamic-web-page">&lt;/span>
-&lt;a href="#static-web-page-vs-dynamic-web-page" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;blockquote>
+&lt;a href="#hugo--github-pages" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;h3>Static web page&lt;span class="hx:absolute hx:-mt-20" id="static-web-page">&lt;/span>
+&lt;a href="#static-web-page" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;blockquote>
 &lt;p>    A static web page, sometimes called a flat page or a stationary page, is a web page that is delivered to a web browser exactly as stored.&lt;br>&lt;br>
 — &lt;a href="https://en.wikipedia.org/wiki/Static_web_page"target="_blank" rel="noopener">Static web page (Wikipedia)&lt;/a>&lt;/p>
 &lt;/blockquote>
+&lt;div class="hx:overflow-x-auto hx:mt-6 hx:flex hx:flex-col hx:rounded-lg hx:border hx:py-4 hx:px-4 hx:border-gray-200 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-blue-200 hx:bg-blue-100 hx:text-blue-900 hx:dark:border-blue-200/30 hx:dark:bg-blue-900/30 hx:dark:text-blue-200">
+&lt;p class="hx:flex hx:items-center hx:font-medium">&lt;svg height=16px class="hx:inline-block hx:align-middle hx:mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>&lt;/svg>Note&lt;/p>
+&lt;div class="hx:w-full hx:min-w-0 hx:leading-7">
+&lt;div class="hx:mt-6 hx:leading-7 hx:first:mt-0">&lt;p>There is also a server-side or client-side dynamic web page.&lt;/p>&lt;/div>
+&lt;/div>
+&lt;/div>
 &lt;br>
-&lt;blockquote>
+&lt;h3>Static site generator&lt;span class="hx:absolute hx:-mt-20" id="static-site-generator">&lt;/span>
+&lt;a href="#static-site-generator" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;blockquote>
 &lt;p>    Static site generators (SSGs) are software engines that use text input files (such as Markdown, reStructuredText, AsciiDoc and JSON) to generate static web pages. SSGs are typically for rarely changing, informative content, such as product pages, news articles, software documentation, and &lt;u>blogs&lt;/u>.&lt;br>&lt;br>
 — &lt;a href="https://en.wikipedia.org/wiki/Static_site_generator"target="_blank" rel="noopener">Static site generator (Wikipedia)&lt;/a>&lt;/p>
 &lt;/blockquote>
+&lt;p>
+&lt;figure>
+&lt;img src="../SSG-Ranking.png" title="Static Site Generator - Ranking" alt="" loading="lazy" />
+&lt;figcaption>Static Site Generator - Ranking&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>I just like the second place. (Ref. &lt;a href="https://ossinsight.io/collections/static-site-generator/"target="_blank" rel="noopener">Static Site Generator - Ranking&lt;/a>)&lt;/p>
+&lt;br>
+&lt;h3>Hugo&lt;span class="hx:absolute hx:-mt-20" id="hugo">&lt;/span>
+&lt;a href="#hugo" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>
+&lt;figure>
+&lt;img src="../Hugo.png" title="Hugo" alt="" loading="lazy" />
+&lt;figcaption>Hugo&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>I choose you! (Ref. &lt;a href="https://gohugo.io/"target="_blank" rel="noopener">Hugo&lt;/a>)&lt;/p>
 &lt;h2>Hextra Starter Template&lt;span class="hx:absolute hx:-mt-20" id="hextra-starter-template">&lt;/span>
-&lt;a href="#hextra-starter-template" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;h2>Automated Deployment&lt;span class="hx:absolute hx:-mt-20" id="automated-deployment">&lt;/span>
+&lt;a href="#hextra-starter-template" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;h3>Hextra&lt;span class="hx:absolute hx:-mt-20" id="hextra">&lt;/span>
+&lt;a href="#hextra" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>
+&lt;figure>
+&lt;img src="../Hugo_Themes.png" title="Hugo Themes" alt="" loading="lazy" />
+&lt;figcaption>Hugo Themes&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>There are many &lt;strong>Hugo&lt;/strong> themes. Among them, I thought &lt;strong>Hextra&lt;/strong> was the coolest name.&lt;/p>
+&lt;p>
+&lt;figure>
+&lt;img src="../Hextra.png" title="Hextra" alt="" loading="lazy" />
+&lt;figcaption>Hextra&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>Let’s do great together, &lt;strong>Hextra&lt;/strong>. (Ref. &lt;a href="https://imfing.github.io/hextra/"target="_blank" rel="noopener">Hextra&lt;/a>)&lt;/p>
+&lt;h3>Use the template&lt;span class="hx:absolute hx:-mt-20" id="use-the-template">&lt;/span>
+&lt;a href="#use-the-template" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>
+&lt;figure>
+&lt;img src="../Quick_Start.png" title="Quick Start" alt="" loading="lazy" />
+&lt;figcaption>Quick Start&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>I started from the bottom. Click the &lt;code>Use this template&lt;/code> button. (Ref. &lt;a href="https://github.com/imfing/hextra-starter-template"target="_blank" rel="noopener">hextra-starter-template&lt;/a>)&lt;/p>
+&lt;div class="hx:overflow-x-auto hx:mt-6 hx:flex hx:flex-col hx:rounded-lg hx:border hx:py-4 hx:px-4 hx:border-gray-200 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-amber-200 hx:bg-amber-100 hx:text-amber-900 hx:dark:border-amber-200/30 hx:dark:bg-amber-900/30 hx:dark:text-amber-200">
+&lt;p class="hx:flex hx:items-center hx:font-medium">&lt;svg height=16px class="hx:inline-block hx:align-middle hx:mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>&lt;/svg>Warning&lt;/p>
+&lt;div class="hx:w-full hx:min-w-0 hx:leading-7">
+&lt;div class="hx:mt-6 hx:leading-7 hx:first:mt-0">&lt;p>I plan to keep the theme fixed to a specific version and track updates manually.&lt;/p>&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;h2>Automated Deployment&lt;span class="hx:absolute hx:-mt-20" id="automated-deployment">&lt;/span>
 &lt;a href="#automated-deployment" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2></description></item></channel></rss>
