@@ -2,4 +2,17 @@
 &lt;p>    This static site was built using &lt;strong>Hugo&lt;/strong> and deployed with &lt;strong>GitHub Pages&lt;/strong>.
 The first blog project began with the &lt;strong>Hextra Starter Template&lt;/strong> as the base theme.
 Deployment is now fully &lt;u>automated&lt;/u> for seamless updates.&lt;/p>
-&lt;p>작성 예정&amp;hellip;&lt;/p></description></item></channel></rss>
+&lt;h2>Hugo + GitHub Pages&lt;span class="hx:absolute hx:-mt-20" id="hugo--github-pages">&lt;/span>
+&lt;a href="#hugo--github-pages" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;h3>&lt;u>Static web page&lt;/u> vs Dynamic web page&lt;span class="hx:absolute hx:-mt-20" id="static-web-page-vs-dynamic-web-page">&lt;/span>
+&lt;a href="#static-web-page-vs-dynamic-web-page" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;blockquote>
+&lt;p>    A static web page, sometimes called a flat page or a stationary page, is a web page that is delivered to a web browser exactly as stored.&lt;br>&lt;br>
+— &lt;a href="https://en.wikipedia.org/wiki/Static_web_page"target="_blank" rel="noopener">Static web page (Wikipedia)&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;br>
+&lt;blockquote>
+&lt;p>    Static site generators (SSGs) are software engines that use text input files (such as Markdown, reStructuredText, AsciiDoc and JSON) to generate static web pages. SSGs are typically for rarely changing, informative content, such as product pages, news articles, software documentation, and &lt;u>blogs&lt;/u>.&lt;br>&lt;br>
+— &lt;a href="https://en.wikipedia.org/wiki/Static_site_generator"target="_blank" rel="noopener">Static site generator (Wikipedia)&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;h2>Hextra Starter Template&lt;span class="hx:absolute hx:-mt-20" id="hextra-starter-template">&lt;/span>
+&lt;a href="#hextra-starter-template" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;h2>Automated Deployment&lt;span class="hx:absolute hx:-mt-20" id="automated-deployment">&lt;/span>
+&lt;a href="#automated-deployment" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2></description></item></channel></rss>
