@@ -2,7 +2,11 @@
 &lt;p>    This static site was built using &lt;strong>Hugo&lt;/strong> and deployed with &lt;strong>GitHub Pages&lt;/strong>.
 The first blog project began with the &lt;strong>Hextra Starter Template&lt;/strong> as the base theme.
 Deployment is now fully &lt;u>automated&lt;/u> for seamless updates.&lt;/p>
-&lt;!-- initial homepage figure -->
+&lt;p>
+&lt;figure>
+&lt;img src="../251123_blog_homepage.png" title="blog homepage (251123)" alt="" loading="lazy" />
+&lt;figcaption>blog homepage (251123)&lt;/figcaption>
+&lt;/figure>&lt;/p>
 &lt;h2>Hugo + GitHub Pages&lt;span class="hx:absolute hx:-mt-20" id="hugo--github-pages">&lt;/span>
 &lt;a href="#hugo--github-pages" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;h3>Static web page&lt;span class="hx:absolute hx:-mt-20" id="static-web-page">&lt;/span>
 &lt;a href="#static-web-page" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;blockquote>
