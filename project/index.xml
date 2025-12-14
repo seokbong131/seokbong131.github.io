@@ -1,4 +1,226 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Seokbong's blog – Project</title><link>https://seokbong131.github.io/project/</link><description>Recent content in Project on Seokbong's blog</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 30 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://seokbong131.github.io/project/index.xml" rel="self" type="application/rss+xml"/><item><title>BaekjoonHub customization (백준허브 커스터마이징)</title><link>https://seokbong131.github.io/project/baekjoonhub_customization/</link><pubDate>Sun, 30 Nov 2025 00:00:00 +0000</pubDate><guid>https://seokbong131.github.io/project/baekjoonhub_customization/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Seokbong's blog – Project</title><link>https://seokbong131.github.io/project/</link><description>Recent content in Project on Seokbong's blog</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 08 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://seokbong131.github.io/project/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugo Hextra website (2)</title><link>https://seokbong131.github.io/project/hugo_hextra_website_2/</link><pubDate>Mon, 08 Dec 2025 00:00:00 +0000</pubDate><guid>https://seokbong131.github.io/project/hugo_hextra_website_2/</guid><description>
+&lt;p>    This post covers the basic configuration and advanced comments system. It explains how to customize the &lt;strong>favicon&lt;/strong>, update the &lt;strong>navigation logo&lt;/strong> and site title, and integrate the &lt;strong>giscus&lt;/strong> comments system.&lt;/p>
+&lt;!-- ![](???.png "??? (2512xx)") -->
+&lt;ul>
+&lt;li>&lt;input disabled="" type="checkbox"> Add logo copyright to footer.&lt;/li>
+&lt;/ul>
+&lt;h2>Favicon&lt;span class="hx:absolute hx:-mt-20" id="favicon">&lt;/span>
+&lt;a href="#favicon" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;h3>ICONS8&lt;span class="hx:absolute hx:-mt-20" id="icons8">&lt;/span>
+&lt;a href="#icons8" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>
+&lt;figure>
+&lt;img src="../ICONS8.png" title="ICONS8" alt="" loading="lazy" />
+&lt;figcaption>ICONS8&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>Perhaps because humans are finite beings, I have always been drawn to the &lt;strong>infinity&lt;/strong> symbol. In the pursuit of approaching perfection, I find a kind of ultimate beauty. Therefore, I chose the &lt;strong>infinity&lt;/strong> symbol from &lt;a href="https://icons8.com/"target="_blank" rel="noopener">ICONS8&lt;/a> and use it as my blog’s favicon.&lt;/p>
+&lt;blockquote>
+&lt;p>    &amp;ldquo;To Infinity and Beyond!&amp;quot;&lt;br>&lt;br>
+— &lt;a href="https://pixar.fandom.com/wiki/To_Infinity_and_Beyond"target="_blank" rel="noopener">Buzz Lightyear, Toy Story series (Pixar Wiki)&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;p>
+&lt;figure>
+&lt;img src="../infinity_symbol.png" title="infinity symbol" alt="" loading="lazy" />
+&lt;figcaption>infinity symbol&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;div class="hx:overflow-x-auto hx:mt-6 hx:flex hx:flex-col hx:rounded-lg hx:border hx:py-4 hx:px-4 hx:border-gray-200 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-purple-200 hx:bg-purple-100 hx:text-purple-900 hx:dark:border-purple-200/30 hx:dark:bg-purple-900/30 hx:dark:text-purple-200">
+&lt;p class="hx:flex hx:items-center hx:font-medium">&lt;svg height=16px class="hx:inline-block hx:align-middle hx:mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>&lt;/svg>Important&lt;/p>
+&lt;div class="hx:w-full hx:min-w-0 hx:leading-7">
+&lt;div class="hx:mt-6 hx:leading-7 hx:first:mt-0">&lt;p>This logo is copyrighted by &amp;ldquo;Twoo&amp;rdquo;. See it &lt;a href="https://icons8.com/icon/dC0JcLYeRCBJ/twoo"target="_blank" rel="noopener">here&lt;/a>.&lt;/p>&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;br>
+&lt;h3>SVG → PNG (override)&lt;span class="hx:absolute hx:-mt-20" id="svg--png-override">&lt;/span>
+&lt;a href="#svg--png-override" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>
+&lt;figure>
+&lt;img src="../favicon_customization.png" title="favicon customization" alt="" loading="lazy" />
+&lt;figcaption>favicon customization&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>To customize the favicon for my site, an SVG is not necessarily required.&lt;/p>
+&lt;blockquote>
+&lt;p>    Scalable Vector Graphics (SVG) is an XML-based vector graphics format for defining two-dimensional graphics, having support for interactivity and animation. SVG images are defined in a vector graphics format and stored in XML text files. SVG images can thus be scaled in size without loss of quality, and SVG files can be searched, indexed, scripted, and compressed.&lt;br>&lt;br>
+— &lt;a href="https://en.wikipedia.org/wiki/SVG"target="_blank" rel="noopener">SVG (Wikipedia)&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;p>A PNG works perfectly well, as long as I override the existing files in the Hextra theme.&lt;/p>
+&lt;ol>
+&lt;li>&lt;code>assets/js/core/favicon.js&lt;/code>&lt;/li>
+&lt;li>&lt;code>layouts/_partials/favicons.html&lt;/code>&lt;/li>
+&lt;/ol>
+&lt;div class="hx:overflow-x-auto hx:mt-6 hx:flex hx:flex-col hx:rounded-lg hx:border hx:py-4 hx:px-4 hx:border-gray-200 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-amber-200 hx:bg-amber-100 hx:text-amber-900 hx:dark:border-amber-200/30 hx:dark:bg-amber-900/30 hx:dark:text-amber-200">
+&lt;p class="hx:flex hx:items-center hx:font-medium">&lt;svg height=16px class="hx:inline-block hx:align-middle hx:mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>&lt;/svg>Warning&lt;/p>
+&lt;div class="hx:w-full hx:min-w-0 hx:leading-7">
+&lt;div class="hx:mt-6 hx:leading-7 hx:first:mt-0">&lt;p>I resolved this issue by overriding the files using the same folder path and file name. But due to Hugo’s policy, it may change again in the future. See this &lt;a href="https://gohugo.io/templates/new-templatesystem-overview/"target="_blank" rel="noopener">page&lt;/a>.&lt;/p>&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;h2>Navigation&lt;span class="hx:absolute hx:-mt-20" id="navigation">&lt;/span>
+&lt;a href="#navigation" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;h3>Logo&lt;span class="hx:absolute hx:-mt-20" id="logo">&lt;/span>
+&lt;a href="#logo" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>Similar to the above favicon, a set of high resolution PNG is sufficient.&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>layouts/_partials/navbar-title.html&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;details class="hx:last-of-type:mb-0 hx:rounded-lg hx:bg-neutral-50 hx:dark:bg-neutral-800 hx:p-2 hx:mt-4 hx:group" >
+&lt;summary class="hx:flex hx:items-center hx:cursor-pointer hx:select-none hx:list-none hx:p-1 hx:rounded-sm hx:transition-colors hx:hover:bg-gray-100 hx:dark:hover:bg-neutral-800 hx:before:mr-1 hx:before:inline-block hx:before:transition-transform hx:before:content-[''] hx:dark:before:invert hx:rtl:before:rotate-180 hx:group-open:before:rotate-90">
+&lt;strong class="hx:text-lg">Details&lt;/strong>
+&lt;/summary>
+&lt;div class="hx:p-2 hx:overflow-hidden">
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+&lt;div class="hextra-code-filename not-prose" dir="auto">HTML&lt;/div>&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-markdown" data-lang="markdown">&lt;span class="line">&lt;span class="cl">{{- $logoPath := .Site.Params.navbar.logo.path | default &amp;#34;images/logo.svg&amp;#34; -}}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{{- $logoLink := .Site.Params.navbar.logo.link | default .Site.Home.RelPermalink -}}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{{- $logoWidth := .Site.Params.navbar.logo.width | default &amp;#34;20&amp;#34; -}}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{{- $logoHeight := .Site.Params.navbar.logo.height | default &amp;#34;20&amp;#34; -}}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{{- $logoDarkPath := .Site.Params.navbar.logo.dark | default $logoPath -}}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">a&lt;/span> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;hx:flex hx:items-center hx:hover:opacity-75 hx:ltr:mr-auto hx:rtl:ml-auto&amp;#34;&lt;/span> &lt;span class="na">href&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;{{ $logoLink }}&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {{- $displayTitle := (.Site.Params.navbar.displayTitle | default true) }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {{- if (.Site.Params.navbar.displayLogo | default true) }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">img&lt;/span> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;hx:mr-2 hx:block hx:dark:hidden&amp;#34;&lt;/span> &lt;span class="na">src&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;{{ $logoPath | relURL }}&amp;#34;&lt;/span> &lt;span class="na">alt&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;{{ cond $displayTitle &lt;/span>&lt;span class="sb">`Logo`&lt;/span>&lt;span class="s"> .Site.Title }}&amp;#34;&lt;/span> &lt;span class="na">height&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;{{ $logoHeight }}&amp;#34;&lt;/span> &lt;span class="na">width&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;{{ $logoWidth }}&amp;#34;&lt;/span> &lt;span class="p">/&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">img&lt;/span> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;hx:mr-2 hx:hidden hx:dark:block&amp;#34;&lt;/span> &lt;span class="na">src&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;{{ $logoDarkPath | relURL }}&amp;#34;&lt;/span> &lt;span class="na">alt&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;{{ cond $displayTitle &lt;/span>&lt;span class="sb">`Dark Logo`&lt;/span>&lt;span class="s"> .Site.Title }}&amp;#34;&lt;/span> &lt;span class="na">height&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;{{ $logoHeight }}&amp;#34;&lt;/span> &lt;span class="na">width&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;{{ $logoWidth }}&amp;#34;&lt;/span> &lt;span class="p">/&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {{- end }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {{- if $displayTitle }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">span&lt;/span> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;hx:mr-2 hx:font-extrabold hx:inline hx:select-none&amp;#34;&lt;/span> &lt;span class="na">title&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;{{ .Site.Title }}&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>{{- .Site.Title -}}&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">span&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {{- end }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">a&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-8">
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Copy code"
+>
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4">&lt;/div>
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/details>
+&lt;br>
+&lt;h3>Title&lt;span class="hx:absolute hx:-mt-20" id="title">&lt;/span>
+&lt;a href="#title" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>To modify the default logo and title, edit &lt;code>hugo.yaml&lt;/code> and add the path to my logo file under &lt;code>static&lt;/code> directory.&lt;/p>
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+&lt;div class="hextra-code-filename not-prose" dir="auto">YAML&lt;/div>&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-markdown" data-lang="markdown">&lt;span class="line">&lt;span class="cl">params:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> navbar:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> displayTitle: true
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> displayLogo: true
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> logo:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> path: logos/infinity_logo.png
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> dark: logos/infinity_logo_dark.png
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> width: 36
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> height: 36&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-8">
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Copy code"
+>
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4">&lt;/div>
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;h2>Advanced&lt;span class="hx:absolute hx:-mt-20" id="advanced">&lt;/span>
+&lt;a href="#advanced" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;h3>giscus&lt;span class="hx:absolute hx:-mt-20" id="giscus">&lt;/span>
+&lt;a href="#giscus" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;blockquote>
+&lt;p>    A comments system powered by GitHub Discussions. Let visitors leave comments and reactions on your website via GitHub! Heavily inspired by utterances.&lt;br>&lt;br>
+— &lt;a href="https://github.com/giscus/giscus"target="_blank" rel="noopener">giscus (GitHub)&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;div class="hx:overflow-x-auto hx:mt-6 hx:flex hx:flex-col hx:rounded-lg hx:border hx:py-4 hx:px-4 hx:border-gray-200 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-blue-200 hx:bg-blue-100 hx:text-blue-900 hx:dark:border-blue-200/30 hx:dark:bg-blue-900/30 hx:dark:text-blue-200">
+&lt;p class="hx:flex hx:items-center hx:font-medium">&lt;svg height=16px class="hx:inline-block hx:align-middle hx:mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>&lt;/svg>Note&lt;/p>
+&lt;div class="hx:w-full hx:min-w-0 hx:leading-7">
+&lt;div class="hx:mt-6 hx:leading-7 hx:first:mt-0">&lt;p>Hextra supports adding comments system to my site. Currently giscus is supported.&lt;/p>&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;h4>① Install the giscus app&lt;span class="hx:absolute hx:-mt-20" id="-install-the-giscus-app">&lt;/span>
+&lt;a href="#-install-the-giscus-app" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;p>
+&lt;figure>
+&lt;img src="../giscus_installation.png" title="giscus installation" alt="" loading="lazy" />
+&lt;figcaption>giscus installation&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>Go to &lt;a href="https://github.com/apps/giscus"target="_blank" rel="noopener">here&lt;/a> and install. Then, make sure access to the specific repository is granted.&lt;/p>
+&lt;div class="hx:overflow-x-auto hx:mt-6 hx:flex hx:flex-col hx:rounded-lg hx:border hx:py-4 hx:px-4 hx:border-gray-200 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-amber-200 hx:bg-amber-100 hx:text-amber-900 hx:dark:border-amber-200/30 hx:dark:bg-amber-900/30 hx:dark:text-amber-200">
+&lt;p class="hx:flex hx:items-center hx:font-medium">&lt;svg height=16px class="hx:inline-block hx:align-middle hx:mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>&lt;/svg>Warning&lt;/p>
+&lt;div class="hx:w-full hx:min-w-0 hx:leading-7">
+&lt;div class="hx:mt-6 hx:leading-7 hx:first:mt-0">&lt;p>The repository is PUBLIC, otherwise visitors will not be able to view the discussion.&lt;/p>&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;h4>② Enable the Discussions feature&lt;span class="hx:absolute hx:-mt-20" id="-enable-the-discussions-feature">&lt;/span>
+&lt;a href="#-enable-the-discussions-feature" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;p>
+&lt;figure>
+&lt;img src="../enable_Discussions.png" title="enable Discussions" alt="" loading="lazy" />
+&lt;figcaption>enable Discussions&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>Go to the repository page (GitHub), click the &lt;u>Settings&lt;/u> tab, and scroll down to the &lt;u>Features&lt;/u> section. This repository is where the discussions will be linked to.&lt;/p>
+&lt;h4>③ Apply the &lt;code>&amp;lt;script&amp;gt;&lt;/code> tag to &lt;code>hugo.yaml&lt;/code>&lt;span class="hx:absolute hx:-mt-20" id="-apply-the-script-tag-to-hugoyaml">&lt;/span>
+&lt;a href="#-apply-the-script-tag-to-hugoyaml" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;p>
+&lt;figure>
+&lt;img src="../giscus.png" title="giscus" alt="" loading="lazy" />
+&lt;figcaption>giscus&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>After completing the minimum setup, link the repository and configure the four options. (Ref. &lt;a href="https://giscus.app"target="_blank" rel="noopener">giscus&lt;/a>) My settings are listed below.&lt;/p>
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+&lt;div class="hextra-code-filename not-prose" dir="auto">YAML&lt;/div>&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-markdown" data-lang="markdown">&lt;span class="line">&lt;span class="cl">params:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> comments:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> enable: true
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> type: giscus
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> giscus:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> repo: [...]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> repoId: [...]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> category: [...]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> categoryId: [...]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> mapping: pathname
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> strict: 1
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> reactionsEnabled: 1
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> emitMetadata: 0
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> inputPosition: bottom
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> theme: transparent_dark
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> lang: en&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-8">
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Copy code"
+>
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4">&lt;/div>
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;br>
+&lt;h3>Minor issue (override)&lt;span class="hx:absolute hx:-mt-20" id="minor-issue-override">&lt;/span>
+&lt;a href="#minor-issue-override" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>To apply the &amp;ldquo;transparent_dark&amp;rdquo; theme, I changed the condition that returns &lt;code>giscusTheme&lt;/code> from &lt;code>giscusTheme === 'light' || giscusTheme === 'dark'&lt;/code> to simply &lt;code>giscusTheme&lt;/code>.&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>layouts/_partials/components/giscus.html&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;details class="hx:last-of-type:mb-0 hx:rounded-lg hx:bg-neutral-50 hx:dark:bg-neutral-800 hx:p-2 hx:mt-4 hx:group" >
+&lt;summary class="hx:flex hx:items-center hx:cursor-pointer hx:select-none hx:list-none hx:p-1 hx:rounded-sm hx:transition-colors hx:hover:bg-gray-100 hx:dark:hover:bg-neutral-800 hx:before:mr-1 hx:before:inline-block hx:before:transition-transform hx:before:content-[''] hx:dark:before:invert hx:rtl:before:rotate-180 hx:group-open:before:rotate-90">
+&lt;strong class="hx:text-lg">Details&lt;/strong>
+&lt;/summary>
+&lt;div class="hx:p-2 hx:overflow-hidden">
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+&lt;div class="hextra-code-filename not-prose" dir="auto">HTML&lt;/div>&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-markdown" data-lang="markdown">&lt;span class="line">&lt;span class="cl">function getGiscusTheme() {
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> const giscusTheme = &amp;#39;{{ .theme }}&amp;#39;;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> if (giscusTheme === &amp;#39;light&amp;#39; || giscusTheme === &amp;#39;dark&amp;#39;) {
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> return giscusTheme;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> }
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> const hugoTheme = localStorage.getItem(&amp;#34;color-theme&amp;#34;);
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> if (hugoTheme === &amp;#39;light&amp;#39; || hugoTheme === &amp;#39;dark&amp;#39;) {
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> return hugoTheme;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> }
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> if (hugoTheme === &amp;#39;system&amp;#39;) {
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> return window.matchMedia(&amp;#39;(prefers-color-scheme: dark)&amp;#39;).matches ? &amp;#39;dark&amp;#39; : &amp;#39;light&amp;#39;;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> }
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> const defaultTheme = &amp;#39;{{ site.Params.theme.default }}&amp;#39;;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> if (defaultTheme === &amp;#39;light&amp;#39; || defaultTheme === &amp;#39;dark&amp;#39;) {
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> return defaultTheme;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> }
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> return window.matchMedia(&amp;#39;(prefers-color-scheme: dark)&amp;#39;).matches ? &amp;#39;dark&amp;#39; : &amp;#39;light&amp;#39;;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">}&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-8">
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Copy code"
+>
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4">&lt;/div>
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/details></description></item><item><title>BaekjoonHub customization (백준허브 커스터마이징)</title><link>https://seokbong131.github.io/project/baekjoonhub_customization/</link><pubDate>Sun, 30 Nov 2025 00:00:00 +0000</pubDate><guid>https://seokbong131.github.io/project/baekjoonhub_customization/</guid><description>
 &lt;p>    Inspired by &lt;a href="https://github.com/BaekjoonHub/BaekjoonHub"target="_blank" rel="noopener">BaekjoonHub&lt;/a>, A Chrome extension that &lt;u>automatically&lt;/u> pushes my code to GitHub when I pass all tests on a BOJ (Baekjoon Online Judge) problem. Instead of using &lt;a href="https://github.com/BaekjoonHub/BaekjoonHub"target="_blank" rel="noopener">BaekjoonHub&lt;/a> as is, I made a few modifications of my own.&lt;/p>
 &lt;p>
 &lt;figure>
