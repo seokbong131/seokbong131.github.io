@@ -1,6 +1,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Seokbong's blog – Project</title><link>https://seokbong131.github.io/project/</link><description>Recent content in Project on Seokbong's blog</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 08 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://seokbong131.github.io/project/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugo Hextra website (2)</title><link>https://seokbong131.github.io/project/hugo_hextra_website_2/</link><pubDate>Mon, 08 Dec 2025 00:00:00 +0000</pubDate><guid>https://seokbong131.github.io/project/hugo_hextra_website_2/</guid><description>
 &lt;p>    This post covers the basic configuration and advanced comments system. It explains how to customize the &lt;strong>favicon&lt;/strong>, update the &lt;strong>navigation logo&lt;/strong> and site title, and integrate the &lt;strong>giscus&lt;/strong> comments system.&lt;/p>
-&lt;!-- ![](???.png "??? (2512xx)") -->
+&lt;p>
+&lt;figure>
+&lt;img src="../251214_blog_guestbook.png" title="blog guestbook (251214)" alt="" loading="lazy" />
+&lt;figcaption>blog guestbook (251214)&lt;/figcaption>
+&lt;/figure>&lt;/p>
 &lt;ul>
 &lt;li>&lt;input disabled="" type="checkbox"> Add logo copyright to footer.&lt;/li>
 &lt;/ul>
