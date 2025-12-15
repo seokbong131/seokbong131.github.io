@@ -1,4 +1,122 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Seokbong's blog – Project</title><link>https://seokbong131.github.io/project/</link><description>Recent content in Project on Seokbong's blog</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 08 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://seokbong131.github.io/project/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugo Hextra website (2)</title><link>https://seokbong131.github.io/project/hugo_hextra_website_2/</link><pubDate>Mon, 08 Dec 2025 00:00:00 +0000</pubDate><guid>https://seokbong131.github.io/project/hugo_hextra_website_2/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Seokbong's blog – Project</title><link>https://seokbong131.github.io/project/</link><description>Recent content in Project on Seokbong's blog</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 12 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://seokbong131.github.io/project/index.xml" rel="self" type="application/rss+xml"/><item><title>tardy renderer minor 1</title><link>https://seokbong131.github.io/project/tardy_renderer_minor_1_1/</link><pubDate>Fri, 12 Dec 2025 00:00:00 +0000</pubDate><guid>https://seokbong131.github.io/project/tardy_renderer_minor_1_1/</guid><description>
+&lt;p>    &lt;strong>Rasterization&lt;/strong> is one of the typical techniques for rendering 3D models. By following the &lt;a href="https://haqr.eu/tinyrenderer/"target="_blank" rel="noopener">tinyrenderer&lt;/a> course, this project aims to explore and understand the &lt;strong>rasterization&lt;/strong> pipeline in low-level 3D graphics libraries. Let&amp;rsquo;s start with a first basic implementation.&lt;/p>
+&lt;h2>Topic of Lectures&lt;span class="hx:absolute hx:-mt-20" id="topic-of-lectures">&lt;/span>
+&lt;a href="#topic-of-lectures" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;details class="hx:last-of-type:mb-0 hx:rounded-lg hx:bg-neutral-50 hx:dark:bg-neutral-800 hx:p-2 hx:mt-4 hx:group" >
+&lt;summary class="hx:flex hx:items-center hx:cursor-pointer hx:select-none hx:list-none hx:p-1 hx:rounded-sm hx:transition-colors hx:hover:bg-gray-100 hx:dark:hover:bg-neutral-800 hx:before:mr-1 hx:before:inline-block hx:before:transition-transform hx:before:content-[''] hx:dark:before:invert hx:rtl:before:rotate-180 hx:group-open:before:rotate-90">
+&lt;strong class="hx:text-lg">Bresenham’s line drawing&lt;/strong>
+&lt;/summary>
+&lt;div class="hx:p-2 hx:overflow-hidden">
+&lt;/div>
+&lt;/details>
+&lt;details class="hx:last-of-type:mb-0 hx:rounded-lg hx:bg-neutral-50 hx:dark:bg-neutral-800 hx:p-2 hx:mt-4 hx:group" >
+&lt;summary class="hx:flex hx:items-center hx:cursor-pointer hx:select-none hx:list-none hx:p-1 hx:rounded-sm hx:transition-colors hx:hover:bg-gray-100 hx:dark:hover:bg-neutral-800 hx:before:mr-1 hx:before:inline-block hx:before:transition-transform hx:before:content-[''] hx:dark:before:invert hx:rtl:before:rotate-180 hx:group-open:before:rotate-90">
+&lt;strong class="hx:text-lg">Triangle rasterization&lt;/strong>
+&lt;/summary>
+&lt;div class="hx:p-2 hx:overflow-hidden">
+&lt;/div>
+&lt;/details>
+&lt;details class="hx:last-of-type:mb-0 hx:rounded-lg hx:bg-neutral-50 hx:dark:bg-neutral-800 hx:p-2 hx:mt-4 hx:group" >
+&lt;summary class="hx:flex hx:items-center hx:cursor-pointer hx:select-none hx:list-none hx:p-1 hx:rounded-sm hx:transition-colors hx:hover:bg-gray-100 hx:dark:hover:bg-neutral-800 hx:before:mr-1 hx:before:inline-block hx:before:transition-transform hx:before:content-[''] hx:dark:before:invert hx:rtl:before:rotate-180 hx:group-open:before:rotate-90">
+&lt;strong class="hx:text-lg">Barycentric coordinates&lt;/strong>
+&lt;/summary>
+&lt;div class="hx:p-2 hx:overflow-hidden">
+&lt;/div>
+&lt;/details>
+&lt;details class="hx:last-of-type:mb-0 hx:rounded-lg hx:bg-neutral-50 hx:dark:bg-neutral-800 hx:p-2 hx:mt-4 hx:group" >
+&lt;summary class="hx:flex hx:items-center hx:cursor-pointer hx:select-none hx:list-none hx:p-1 hx:rounded-sm hx:transition-colors hx:hover:bg-gray-100 hx:dark:hover:bg-neutral-800 hx:before:mr-1 hx:before:inline-block hx:before:transition-transform hx:before:content-[''] hx:dark:before:invert hx:rtl:before:rotate-180 hx:group-open:before:rotate-90">
+&lt;strong class="hx:text-lg">Hidden faces removal&lt;/strong>
+&lt;/summary>
+&lt;div class="hx:p-2 hx:overflow-hidden">
+&lt;/div>
+&lt;/details>
+&lt;details class="hx:last-of-type:mb-0 hx:rounded-lg hx:bg-neutral-50 hx:dark:bg-neutral-800 hx:p-2 hx:mt-4 hx:group" >
+&lt;summary class="hx:flex hx:items-center hx:cursor-pointer hx:select-none hx:list-none hx:p-1 hx:rounded-sm hx:transition-colors hx:hover:bg-gray-100 hx:dark:hover:bg-neutral-800 hx:before:mr-1 hx:before:inline-block hx:before:transition-transform hx:before:content-[''] hx:dark:before:invert hx:rtl:before:rotate-180 hx:group-open:before:rotate-90">
+&lt;strong class="hx:text-lg">Naive camera handling&lt;/strong>
+&lt;/summary>
+&lt;div class="hx:p-2 hx:overflow-hidden">
+&lt;/div>
+&lt;/details>
+&lt;details class="hx:last-of-type:mb-0 hx:rounded-lg hx:bg-neutral-50 hx:dark:bg-neutral-800 hx:p-2 hx:mt-4 hx:group" >
+&lt;summary class="hx:flex hx:items-center hx:cursor-pointer hx:select-none hx:list-none hx:p-1 hx:rounded-sm hx:transition-colors hx:hover:bg-gray-100 hx:dark:hover:bg-neutral-800 hx:before:mr-1 hx:before:inline-block hx:before:transition-transform hx:before:content-[''] hx:dark:before:invert hx:rtl:before:rotate-180 hx:group-open:before:rotate-90">
+&lt;strong class="hx:text-lg">Better camera&lt;/strong>
+&lt;/summary>
+&lt;div class="hx:p-2 hx:overflow-hidden">
+&lt;/div>
+&lt;/details>
+&lt;details class="hx:last-of-type:mb-0 hx:rounded-lg hx:bg-neutral-50 hx:dark:bg-neutral-800 hx:p-2 hx:mt-4 hx:group" >
+&lt;summary class="hx:flex hx:items-center hx:cursor-pointer hx:select-none hx:list-none hx:p-1 hx:rounded-sm hx:transition-colors hx:hover:bg-gray-100 hx:dark:hover:bg-neutral-800 hx:before:mr-1 hx:before:inline-block hx:before:transition-transform hx:before:content-[''] hx:dark:before:invert hx:rtl:before:rotate-180 hx:group-open:before:rotate-90">
+&lt;strong class="hx:text-lg">Shading&lt;/strong>
+&lt;/summary>
+&lt;div class="hx:p-2 hx:overflow-hidden">
+&lt;/div>
+&lt;/details>
+&lt;details class="hx:last-of-type:mb-0 hx:rounded-lg hx:bg-neutral-50 hx:dark:bg-neutral-800 hx:p-2 hx:mt-4 hx:group" >
+&lt;summary class="hx:flex hx:items-center hx:cursor-pointer hx:select-none hx:list-none hx:p-1 hx:rounded-sm hx:transition-colors hx:hover:bg-gray-100 hx:dark:hover:bg-neutral-800 hx:before:mr-1 hx:before:inline-block hx:before:transition-transform hx:before:content-[''] hx:dark:before:invert hx:rtl:before:rotate-180 hx:group-open:before:rotate-90">
+&lt;strong class="hx:text-lg">More data!&lt;/strong>
+&lt;/summary>
+&lt;div class="hx:p-2 hx:overflow-hidden">
+&lt;/div>
+&lt;/details>
+&lt;details class="hx:last-of-type:mb-0 hx:rounded-lg hx:bg-neutral-50 hx:dark:bg-neutral-800 hx:p-2 hx:mt-4 hx:group" >
+&lt;summary class="hx:flex hx:items-center hx:cursor-pointer hx:select-none hx:list-none hx:p-1 hx:rounded-sm hx:transition-colors hx:hover:bg-gray-100 hx:dark:hover:bg-neutral-800 hx:before:mr-1 hx:before:inline-block hx:before:transition-transform hx:before:content-[''] hx:dark:before:invert hx:rtl:before:rotate-180 hx:group-open:before:rotate-90">
+&lt;strong class="hx:text-lg">Tangent space&lt;/strong>
+&lt;/summary>
+&lt;div class="hx:p-2 hx:overflow-hidden">
+&lt;/div>
+&lt;/details>
+&lt;details class="hx:last-of-type:mb-0 hx:rounded-lg hx:bg-neutral-50 hx:dark:bg-neutral-800 hx:p-2 hx:mt-4 hx:group" >
+&lt;summary class="hx:flex hx:items-center hx:cursor-pointer hx:select-none hx:list-none hx:p-1 hx:rounded-sm hx:transition-colors hx:hover:bg-gray-100 hx:dark:hover:bg-neutral-800 hx:before:mr-1 hx:before:inline-block hx:before:transition-transform hx:before:content-[''] hx:dark:before:invert hx:rtl:before:rotate-180 hx:group-open:before:rotate-90">
+&lt;strong class="hx:text-lg">Shadow mapping&lt;/strong>
+&lt;/summary>
+&lt;div class="hx:p-2 hx:overflow-hidden">
+&lt;/div>
+&lt;/details>
+&lt;details class="hx:last-of-type:mb-0 hx:rounded-lg hx:bg-neutral-50 hx:dark:bg-neutral-800 hx:p-2 hx:mt-4 hx:group" >
+&lt;summary class="hx:flex hx:items-center hx:cursor-pointer hx:select-none hx:list-none hx:p-1 hx:rounded-sm hx:transition-colors hx:hover:bg-gray-100 hx:dark:hover:bg-neutral-800 hx:before:mr-1 hx:before:inline-block hx:before:transition-transform hx:before:content-[''] hx:dark:before:invert hx:rtl:before:rotate-180 hx:group-open:before:rotate-90">
+&lt;strong class="hx:text-lg">Ambient occlusion&lt;/strong>
+&lt;/summary>
+&lt;div class="hx:p-2 hx:overflow-hidden">
+&lt;/div>
+&lt;/details>
+&lt;details class="hx:last-of-type:mb-0 hx:rounded-lg hx:bg-neutral-50 hx:dark:bg-neutral-800 hx:p-2 hx:mt-4 hx:group" >
+&lt;summary class="hx:flex hx:items-center hx:cursor-pointer hx:select-none hx:list-none hx:p-1 hx:rounded-sm hx:transition-colors hx:hover:bg-gray-100 hx:dark:hover:bg-neutral-800 hx:before:mr-1 hx:before:inline-block hx:before:transition-transform hx:before:content-[''] hx:dark:before:invert hx:rtl:before:rotate-180 hx:group-open:before:rotate-90">
+&lt;strong class="hx:text-lg">Bonus: toon shading&lt;/strong>
+&lt;/summary>
+&lt;div class="hx:p-2 hx:overflow-hidden">
+&lt;/div>
+&lt;/details>
+&lt;h2>Homework&lt;span class="hx:absolute hx:-mt-20" id="homework">&lt;/span>
+&lt;a href="#homework" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;h2>Custom Features&lt;span class="hx:absolute hx:-mt-20" id="custom-features">&lt;/span>
+&lt;a href="#custom-features" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Add PNG image output support by &lt;code>stb_image_write.h&lt;/code>.&lt;/li>
+&lt;/ul>
+&lt;h2>Development Environment&lt;span class="hx:absolute hx:-mt-20" id="development-environment">&lt;/span>
+&lt;a href="#development-environment" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;h3>Hardware specifications&lt;span class="hx:absolute hx:-mt-20" id="hardware-specifications">&lt;/span>
+&lt;a href="#hardware-specifications" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;ul>
+&lt;li>&lt;strong>CPU&lt;/strong>: Intel Core i7-8750H (6 cores, 12 threads @ 2.20GHz)&lt;/li>
+&lt;li>&lt;strong>GPU&lt;/strong>: NVIDIA GeForce GTX 1060 (6GB VRAM)&lt;/li>
+&lt;li>&lt;strong>RAM&lt;/strong>: 16GB&lt;/li>
+&lt;/ul>
+&lt;br>
+&lt;h3>Software requirements&lt;span class="hx:absolute hx:-mt-20" id="software-requirements">&lt;/span>
+&lt;a href="#software-requirements" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;ul>
+&lt;li>&lt;strong>OS&lt;/strong>: Windows 11 Home (Build 26200.7462)&lt;/li>
+&lt;li>&lt;strong>IDE&lt;/strong>: Visual Studio 2026&lt;/li>
+&lt;li>&lt;strong>Compiler&lt;/strong>: MSVC (included with Visual Studio 2026)&lt;/li>
+&lt;li>&lt;strong>C++ Standard&lt;/strong>: C++20&lt;/li>
+&lt;li>&lt;strong>Build System&lt;/strong>: Visual Studio Solution (.sln)&lt;/li>
+&lt;li>&lt;strong>Graphics API&lt;/strong>: &lt;font color="#FF0000">None&lt;/font> - Pure software rasterizer (CPU-based rendering)&lt;/li>
+&lt;/ul>
+&lt;br>
+&lt;h3>Dependencies&lt;span class="hx:absolute hx:-mt-20" id="dependencies">&lt;/span>
+&lt;a href="#dependencies" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;ul>
+&lt;li>&lt;strong>stb_image_write.h&lt;/strong> - For PNG image export (header-only library)
+&lt;ul>
+&lt;li>Source: &lt;a href="https://github.com/nothings/stb/blob/master/stb_image_write.h"target="_blank" rel="noopener">stb/stb_image_write.h&lt;/a>&lt;/li>
+&lt;li>Already included in project&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul></description></item><item><title>Hugo Hextra website (2)</title><link>https://seokbong131.github.io/project/hugo_hextra_website_2/</link><pubDate>Mon, 08 Dec 2025 00:00:00 +0000</pubDate><guid>https://seokbong131.github.io/project/hugo_hextra_website_2/</guid><description>
 &lt;p>    This post covers the basic configuration and advanced comments system. It explains how to customize the &lt;strong>favicon&lt;/strong>, update the &lt;strong>navigation logo&lt;/strong> and site title, and integrate the &lt;strong>giscus&lt;/strong> comments system.&lt;/p>
 &lt;p>
 &lt;figure>
