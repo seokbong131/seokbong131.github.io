@@ -22,6 +22,25 @@
 &lt;img src="../L_1_attempt_3.png" title="3rd attempt" alt="" loading="lazy" />
 &lt;figcaption>3rd attempt&lt;/figcaption>
 &lt;/figure>&lt;/p>
+&lt;div class="hx:overflow-x-auto hx:mt-6 hx:flex hx:flex-col hx:rounded-lg hx:border hx:py-4 hx:px-4 hx:border-gray-200 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-blue-200 hx:bg-blue-100 hx:text-blue-900 hx:dark:border-blue-200/30 hx:dark:bg-blue-900/30 hx:dark:text-blue-200">
+&lt;p class="hx:flex hx:items-center hx:font-medium">&lt;svg height=16px class="hx:inline-block hx:align-middle hx:mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>&lt;/svg>Note&lt;/p>
+&lt;div class="hx:w-full hx:min-w-0 hx:leading-7">
+&lt;div class="hx:mt-6 hx:leading-7 hx:first:mt-0">&lt;p>All measurements in &lt;u>Release&lt;/u> mode with optimizations enabled (averaged over 5 runs)&lt;/p>&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;p>Here are the performance measurements on Windows.&lt;/p>
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+&lt;div class="hextra-code-filename not-prose" dir="auto">PowerShell&lt;/div>&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-markdown" data-lang="markdown">&lt;span class="line">&lt;span class="cl">cd ./x64/Release
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Measure-Command { .\tardy_renderer_minor_1.exe }&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-8">
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Copy code"
+>
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4">&lt;/div>
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
 &lt;p>&lt;figure>
 &lt;img src="../L_1_attempt_4_round_0.png" title="4th attempt, round 0 (avg 4.46053706 sec)" alt="" loading="lazy" />
 &lt;figcaption>4th attempt, round 0 (avg 4.46053706 sec)&lt;/figcaption>
@@ -34,6 +53,21 @@
 &lt;img src="../L_1_attempt_4_round_2.png" title="4th attempt, round 2 (avg 4.3917408 sec)" alt="" loading="lazy" />
 &lt;figcaption>4th attempt, round 2 (avg 4.3917408 sec)&lt;/figcaption>
 &lt;/figure>&lt;/p>
+&lt;p>&lt;figure>
+&lt;img src="../L_1_attempt_4_round_3.png" title="4th attempt, round 3 (avg 3.91366674 sec)" alt="" loading="lazy" />
+&lt;figcaption>4th attempt, round 3 (avg 3.91366674 sec)&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;div class="hx:overflow-x-auto hx:mt-6 hx:flex hx:flex-col hx:rounded-lg hx:border hx:py-4 hx:px-4 hx:border-gray-200 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-blue-200 hx:bg-blue-100 hx:text-blue-900 hx:dark:border-blue-200/30 hx:dark:bg-blue-900/30 hx:dark:text-blue-200">
+&lt;p class="hx:flex hx:items-center hx:font-medium">&lt;svg height=16px class="hx:inline-block hx:align-middle hx:mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>&lt;/svg>Note&lt;/p>
+&lt;div class="hx:w-full hx:min-w-0 hx:leading-7">
+&lt;div class="hx:mt-6 hx:leading-7 hx:first:mt-0">&lt;p>In the past, floating-point operations were significantly more expensive than integer ones (or even entirely inaccessible). This is why Jack Elton Bresenham developed his all-integer rasterization algorithm in the 1960s.&lt;/p>&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;p>&lt;figure>
+&lt;img src="../L_1_attempt_4_round_4.png" title="4th attempt, round 4 (avg 3.230245646 sec)" alt="" loading="lazy" />
+&lt;figcaption>4th attempt, round 4 (avg 3.230245646 sec)&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>Thank you, Professor Bresenham. I see you.&lt;/p>
 &lt;/div>
 &lt;/details>
 &lt;details class="hx:last-of-type:mb-0 hx:rounded-lg hx:bg-neutral-50 hx:dark:bg-neutral-800 hx:p-2 hx:mt-4 hx:group" >
@@ -135,7 +169,6 @@
 &lt;li>&lt;strong>Build System&lt;/strong>: Visual Studio Solution (.sln)&lt;/li>
 &lt;li>&lt;strong>Graphics API&lt;/strong>: &lt;font color="#FF0000">None&lt;/font> - Pure software rasterizer (CPU-based rendering)&lt;/li>
 &lt;/ul>
-&lt;p>&lt;em>P.S.&lt;/em> All measurements in &lt;u>Release&lt;/u> mode with optimizations enabled (averaged over 5 runs)&lt;/p>
 &lt;br>
 &lt;h3>Dependencies&lt;span class="hx:absolute hx:-mt-20" id="dependencies">&lt;/span>
 &lt;a href="#dependencies" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;ul>
