@@ -1,5 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Seokbong's blog – Project</title><link>https://seokbong131.github.io/project/</link><description>Recent content in Project on Seokbong's blog</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 12 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://seokbong131.github.io/project/index.xml" rel="self" type="application/rss+xml"/><item><title>tardy renderer minor 1</title><link>https://seokbong131.github.io/project/tardy_renderer_minor_1_1/</link><pubDate>Fri, 12 Dec 2025 00:00:00 +0000</pubDate><guid>https://seokbong131.github.io/project/tardy_renderer_minor_1_1/</guid><description>
 &lt;p>    &lt;strong>Rasterization&lt;/strong> is one of the typical techniques for rendering 3D models. By following the &lt;a href="https://haqr.eu/tinyrenderer/"target="_blank" rel="noopener">tinyrenderer&lt;/a> course, this project aims to explore and understand the &lt;strong>rasterization&lt;/strong> pipeline in low-level 3D graphics libraries. Let&amp;rsquo;s start with a first basic implementation.&lt;/p>
+&lt;div class="hx:overflow-x-auto hx:mt-6 hx:flex hx:flex-col hx:rounded-lg hx:border hx:py-4 hx:px-4 hx:border-gray-200 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-purple-200 hx:bg-purple-100 hx:text-purple-900 hx:dark:border-purple-200/30 hx:dark:bg-purple-900/30 hx:dark:text-purple-200">
+&lt;p class="hx:flex hx:items-center hx:font-medium">&lt;svg height=16px class="hx:inline-block hx:align-middle hx:mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>&lt;/svg>Important&lt;/p>
+&lt;div class="hx:w-full hx:min-w-0 hx:leading-7">
+&lt;div class="hx:mt-6 hx:leading-7 hx:first:mt-0">&lt;p>All models (Wavefront .obj file format) are from the tinyrenderer course. See it &lt;a href="https://github.com/ssloy/tinyrenderer/tree/master/obj"target="_blank" rel="noopener">here&lt;/a>.&lt;/p>&lt;/div>
+&lt;/div>
+&lt;/div>
 &lt;h2>Topic of Lessons&lt;span class="hx:absolute hx:-mt-20" id="topic-of-lessons">&lt;/span>
 &lt;a href="#topic-of-lessons" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;details class="hx:last-of-type:mb-0 hx:rounded-lg hx:bg-neutral-50 hx:dark:bg-neutral-800 hx:p-2 hx:mt-4 hx:group" >
 &lt;summary class="hx:flex hx:items-center hx:cursor-pointer hx:select-none hx:list-none hx:p-1 hx:rounded-sm hx:transition-colors hx:hover:bg-gray-100 hx:dark:hover:bg-neutral-800 hx:before:mr-1 hx:before:inline-block hx:before:transition-transform hx:before:content-[''] hx:dark:before:invert hx:rtl:before:rotate-180 hx:group-open:before:rotate-90">
@@ -148,7 +154,76 @@ title="Copy code"
 &lt;/div>
 &lt;/details>
 &lt;h2>Homework&lt;span class="hx:absolute hx:-mt-20" id="homework">&lt;/span>
-&lt;a href="#homework" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;h2>Custom Features&lt;span class="hx:absolute hx:-mt-20" id="custom-features">&lt;/span>
+&lt;a href="#homework" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;details class="hx:last-of-type:mb-0 hx:rounded-lg hx:bg-neutral-50 hx:dark:bg-neutral-800 hx:p-2 hx:mt-4 hx:group" >
+&lt;summary class="hx:flex hx:items-center hx:cursor-pointer hx:select-none hx:list-none hx:p-1 hx:rounded-sm hx:transition-colors hx:hover:bg-gray-100 hx:dark:hover:bg-neutral-800 hx:before:mr-1 hx:before:inline-block hx:before:transition-transform hx:before:content-[''] hx:dark:before:invert hx:rtl:before:rotate-180 hx:group-open:before:rotate-90">
+&lt;strong class="hx:text-lg">Bresenham’s line drawing (wireframe rendering)&lt;/strong>
+&lt;/summary>
+&lt;div class="hx:p-2 hx:overflow-hidden">
+&lt;p>&lt;figure>
+&lt;img src="../Diablo_3_trailer.jpg" title="Diablo" alt="" loading="lazy" />
+&lt;figcaption>Diablo&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>You can see the actual appearance in &lt;a href="https://www.youtube.com/watch?v=ftnpGWFaEsQ"target="_blank" rel="noopener">this video&lt;/a>. (Ref. &lt;a href="https://www.artstation.com/artwork/mD9AY"target="_blank" rel="noopener">Diablo Ⅲ Cinematics&lt;/a>)&lt;/p>
+&lt;p>&lt;figure>
+&lt;img src="../HW_1_Model_editor_Z.png" title="Diablo - front view (Visual Studio Model editor)" alt="" loading="lazy" />
+&lt;figcaption>Diablo - front view (Visual Studio Model editor)&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>&lt;figure>
+&lt;img src="../HW_1_Model_editor_X.png" title="Diablo - left view (Visual Studio Model editor)" alt="" loading="lazy" />
+&lt;figcaption>Diablo - left view (Visual Studio Model editor)&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>&lt;figure>
+&lt;img src="../HW_1_Model_editor_Y.png" title="Diablo - top view (Visual Studio Model editor)" alt="" loading="lazy" />
+&lt;figcaption>Diablo - top view (Visual Studio Model editor)&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>The resolution in the Visual Studio Model editor is 500 x 500, while the others (my renderer) are 1000 x 1000.&lt;/p>
+&lt;p>&lt;figure>
+&lt;img src="../HW_1_Z.png" title="Diablo - front view" alt="" loading="lazy" />
+&lt;figcaption>Diablo - front view&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>&lt;figure>
+&lt;img src="../HW_1_X.png" title="Diablo - left view" alt="" loading="lazy" />
+&lt;figcaption>Diablo - left view&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>&lt;figure>
+&lt;img src="../HW_1_Y.png" title="Diablo - top view" alt="" loading="lazy" />
+&lt;figcaption>Diablo - top view&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>&lt;figure>
+&lt;img src="../HW_1_boggie_body.png" title="Boggie - front view (body)" alt="" loading="lazy" />
+&lt;figcaption>Boggie - front view (body)&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>&lt;figure>
+&lt;img src="../HW_1_boggie_eyes.png" title="Boggie - front view (eyes)" alt="" loading="lazy" />
+&lt;figcaption>Boggie - front view (eyes)&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>&lt;figure>
+&lt;img src="../HW_1_boggie_head.png" title="Boggie - front view (head)" alt="" loading="lazy" />
+&lt;figcaption>Boggie - front view (head)&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>&lt;figure>
+&lt;img src="../HW_1_boggie.png" title="Boggie - front view (full)" alt="" loading="lazy" />
+&lt;figcaption>Boggie - front view (full)&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>&lt;figure>
+&lt;img src="../HW_1_african_head_1.png" title="African head - front view (head)" alt="" loading="lazy" />
+&lt;figcaption>African head - front view (head)&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>&lt;figure>
+&lt;img src="../HW_1_african_head_eye_inner_2.png" title="African head - front view (eye inner)" alt="" loading="lazy" />
+&lt;figcaption>African head - front view (eye inner)&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>&lt;figure>
+&lt;img src="../HW_1_african_head_eye_outer_3.png" title="African head - front view (eye outer)" alt="" loading="lazy" />
+&lt;figcaption>African head - front view (eye outer)&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>&lt;figure>
+&lt;img src="../HW_1_african_head.png" title="African head - front view (full)" alt="" loading="lazy" />
+&lt;figcaption>African head - front view (full)&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;/div>
+&lt;/details>
+&lt;h2>Custom Features&lt;span class="hx:absolute hx:-mt-20" id="custom-features">&lt;/span>
 &lt;a href="#custom-features" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> Add PNG image output support by &lt;code>stb_image_write.h&lt;/code>.&lt;/li>
 &lt;/ul>
