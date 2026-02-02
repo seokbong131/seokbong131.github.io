@@ -85,16 +85,16 @@ title="Copy code"
 &lt;img src="../L_2_scanline_rendering_1.png" title="initial three triangles" alt="" loading="lazy" />
 &lt;figcaption>initial three triangles&lt;/figcaption>
 &lt;/figure>&lt;/p>
-&lt;p>&lt;figure>
-&lt;img src="../L_2_scanline_rendering_2.png" title="insertion sort (ascending order)" alt="" loading="lazy" />
-&lt;figcaption>insertion sort (ascending order)&lt;/figcaption>
-&lt;/figure>&lt;/p>
 &lt;div class="hx:overflow-x-auto hx:mt-6 hx:flex hx:flex-col hx:rounded-lg hx:border hx:py-4 hx:px-4 hx:border-gray-200 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-blue-200 hx:bg-blue-100 hx:text-blue-900 hx:dark:border-blue-200/30 hx:dark:bg-blue-900/30 hx:dark:text-blue-200">
 &lt;p class="hx:flex hx:items-center hx:font-medium">&lt;svg height=16px class="hx:inline-block hx:align-middle hx:mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>&lt;/svg>Note&lt;/p>
 &lt;div class="hx:w-full hx:min-w-0 hx:leading-7">
 &lt;div class="hx:mt-6 hx:leading-7 hx:first:mt-0">&lt;p>Since the three vertices need to be sorted, I adopted the &lt;a href="https://en.wikipedia.org/wiki/Insertion_sort"target="_blank" rel="noopener">insertion sort&lt;/a> from C++ standard library&amp;rsquo;s &lt;a href="https://en.wikipedia.org/wiki/Introsort"target="_blank" rel="noopener">introsort&lt;/a>.&lt;/p>&lt;/div>
 &lt;/div>
 &lt;/div>
+&lt;p>&lt;figure>
+&lt;img src="../L_2_scanline_rendering_2.png" title="insertion sort (ascending order)" alt="" loading="lazy" />
+&lt;figcaption>insertion sort (ascending order)&lt;/figcaption>
+&lt;/figure>&lt;/p>
 &lt;p>&lt;figure>
 &lt;img src="../L_2_scanline_rendering_3_1.png" title="lower half border" alt="" loading="lazy" />
 &lt;figcaption>lower half border&lt;/figcaption>
@@ -107,10 +107,22 @@ title="Copy code"
 &lt;img src="../L_2_scanline_rendering_3_3.png" title="full border with base line" alt="" loading="lazy" />
 &lt;figcaption>full border with base line&lt;/figcaption>
 &lt;/figure>&lt;/p>
+&lt;p>After sorting, the edges are colored as follows:&lt;/p>
+&lt;ul>
+&lt;li>edge between the &lt;em>1st&lt;/em> and &lt;em>2nd&lt;/em> vertices: &lt;font color="#0000FF">blue&lt;/font>&lt;/li>
+&lt;li>edge between the &lt;em>2nd&lt;/em> and &lt;em>3rd&lt;/em> vertices: &lt;font color="#00FF00">green&lt;/font>&lt;/li>
+&lt;li>edge between the &lt;em>3rd&lt;/em> and &lt;em>1st&lt;/em> vertices: &lt;font color="#FF0000">red&lt;/font>&lt;/li>
+&lt;/ul>
 &lt;p>&lt;figure>
 &lt;img src="../L_2_scanline_rendering_3_4.png" title="full border" alt="" loading="lazy" />
 &lt;figcaption>full border&lt;/figcaption>
 &lt;/figure>&lt;/p>
+&lt;div class="hx:overflow-x-auto hx:mt-6 hx:flex hx:flex-col hx:rounded-lg hx:border hx:py-4 hx:px-4 hx:border-gray-200 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-amber-200 hx:bg-amber-100 hx:text-amber-900 hx:dark:border-amber-200/30 hx:dark:bg-amber-900/30 hx:dark:text-amber-200">
+&lt;p class="hx:flex hx:items-center hx:font-medium">&lt;svg height=16px class="hx:inline-block hx:align-middle hx:mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>&lt;/svg>Warning&lt;/p>
+&lt;div class="hx:w-full hx:min-w-0 hx:leading-7">
+&lt;div class="hx:mt-6 hx:leading-7 hx:first:mt-0">&lt;p>While the &lt;a href="https://en.wikipedia.org/wiki/Rasterisation#Triangle_rasterization"target="_blank" rel="noopener">top-left rule&lt;/a> is standard practice for rasterization, it&amp;rsquo;s unnecessary here as the three triangles are non-overlapping.&lt;/p>&lt;/div>
+&lt;/div>
+&lt;/div>
 &lt;p>&lt;figure>
 &lt;img src="../L_2_scanline_rendering_4_1.png" title="lower half (top-left rule O)" alt="" loading="lazy" />
 &lt;figcaption>lower half (top-left rule O)&lt;/figcaption>
@@ -135,10 +147,12 @@ title="Copy code"
 &lt;img src="../L_2_scanline_rendering_4_6.png" title="filled triangles" alt="" loading="lazy" />
 &lt;figcaption>filled triangles&lt;/figcaption>
 &lt;/figure>&lt;/p>
+&lt;p>AABB means &lt;u>A&lt;/u>xis-&lt;u>A&lt;/u>ligned &lt;u>B&lt;/u>ounding &lt;u>B&lt;/u>ox, a type of &lt;a href="https://en.wikipedia.org/wiki/Bounding_volume"target="_blank" rel="noopener">bounding volume&lt;/a>.&lt;/p>
 &lt;p>&lt;figure>
 &lt;img src="../L_2_modern_rasterization_1.png" title="AABB rasterization" alt="" loading="lazy" />
 &lt;figcaption>AABB rasterization&lt;/figcaption>
 &lt;/figure>&lt;/p>
+&lt;p>I think it is more efficient to use &lt;code>float&lt;/code> instead of &lt;code>double&lt;/code>. Because it provides sufficient precision for optimization with no visually perceivable loss in quality.&lt;/p>
 &lt;p>&lt;figure>
 &lt;img src="../L_2_modern_rasterization_2.png" title="triangle rasterization (double)" alt="" loading="lazy" />
 &lt;figcaption>triangle rasterization (double)&lt;/figcaption>
@@ -147,6 +161,13 @@ title="Copy code"
 &lt;img src="../L_2_modern_rasterization_3.png" title="triangle rasterization (float)" alt="" loading="lazy" />
 &lt;figcaption>triangle rasterization (float)&lt;/figcaption>
 &lt;/figure>&lt;/p>
+&lt;p>The output of scanline rendering and modern rasterization are NOT same. This discrepancy is driven by three technical factors:&lt;/p>
+&lt;ol>
+&lt;li>quantization errors from integer arithmetic,&lt;/li>
+&lt;li>tie-breaking rules (like the Top-Left rule) for shared edges,&lt;/li>
+&lt;li>and the shift from incremental to pixel-independent interpolation.&lt;/li>
+&lt;/ol>
+&lt;p>Ultimately, the modern rasterization approach provides superior precision and architectural consistency.&lt;/p>
 &lt;/div>
 &lt;/details>
 &lt;details class="hx:last-of-type:mb-0 hx:rounded-lg hx:bg-neutral-50 hx:dark:bg-neutral-800 hx:p-2 hx:mt-4 hx:group" >
