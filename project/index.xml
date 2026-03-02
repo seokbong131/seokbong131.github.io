@@ -1,5 +1,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Seokbong's blog – Project</title><link>https://seokbong131.github.io/project/</link><description>Recent content in Project on Seokbong's blog</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 12 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://seokbong131.github.io/project/index.xml" rel="self" type="application/rss+xml"/><item><title>tardy renderer minor 1</title><link>https://seokbong131.github.io/project/tardy_renderer_minor_1_1/</link><pubDate>Fri, 12 Dec 2025 00:00:00 +0000</pubDate><guid>https://seokbong131.github.io/project/tardy_renderer_minor_1_1/</guid><description>
-&lt;p>    &lt;strong>Rasterization&lt;/strong> is one of the typical techniques for rendering 3D models. By following the &lt;a href="https://haqr.eu/tinyrenderer/"target="_blank" rel="noopener">tinyrenderer&lt;/a> course, this project aims to explore and understand the &lt;strong>rasterization&lt;/strong> pipeline in low-level 3D graphics libraries. Let&amp;rsquo;s start with a first basic implementation.&lt;/p>
+&lt;p>    &lt;strong>Rasterization&lt;/strong> is one of the typical techniques for rendering 3D models.
+By following the &lt;a href="https://haqr.eu/tinyrenderer/"target="_blank" rel="noopener">tinyrenderer&lt;/a> course, this project aims to explore and understand the &lt;strong>rasterization&lt;/strong> pipeline in low-level 3D graphics libraries.
+Let&amp;rsquo;s start with a first basic implementation.&lt;/p>
 &lt;div class="hx:overflow-x-auto hx:mt-6 hx:flex hx:flex-col hx:rounded-lg hx:border hx:py-4 hx:px-4 hx:border-gray-200 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-purple-200 hx:bg-purple-100 hx:text-purple-900 hx:dark:border-purple-200/30 hx:dark:bg-purple-900/30 hx:dark:text-purple-200">
 &lt;p class="hx:flex hx:items-center hx:font-medium">&lt;svg height=16px class="hx:inline-block hx:align-middle hx:mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>&lt;/svg>Important&lt;/p>
 &lt;div class="hx:w-full hx:min-w-0 hx:leading-7">
@@ -36,8 +38,8 @@
 &lt;/div>
 &lt;p>Here are the performance measurements on Windows.&lt;/p>
 &lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
-&lt;div class="hextra-code-filename not-prose" dir="auto">PowerShell&lt;/div>&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-markdown" data-lang="markdown">&lt;span class="line">&lt;span class="cl">cd ./x64/Release
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Measure-Command { .\tardy_renderer_minor_1.exe }&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-8">
+&lt;div class="hextra-code-filename not-prose" dir="auto">PowerShell&lt;/div>&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-powershell" data-lang="powershell">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">cd &lt;/span>&lt;span class="p">./&lt;/span>&lt;span class="n">x64&lt;/span>&lt;span class="p">/&lt;/span>&lt;span class="n">Release&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">Measure-Command&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="p">.\&lt;/span>&lt;span class="n">tardy_renderer_minor_1&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="py">exe&lt;/span> &lt;span class="p">}&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-8">
 &lt;button
 class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
 title="Copy code"
@@ -152,7 +154,8 @@ title="Copy code"
 &lt;img src="../L_2_modern_rasterization_1.png" title="AABB rasterization" alt="" loading="lazy" />
 &lt;figcaption>AABB rasterization&lt;/figcaption>
 &lt;/figure>&lt;/p>
-&lt;p>I think it is more efficient to use &lt;code>float&lt;/code> instead of &lt;code>double&lt;/code>. Because it provides sufficient precision for optimization with no visually perceivable loss in quality.&lt;/p>
+&lt;p>I think it is more efficient to use &lt;code>float&lt;/code> instead of &lt;code>double&lt;/code>.
+Because it provides sufficient precision for optimization with no visually perceivable loss in quality.&lt;/p>
 &lt;p>&lt;figure>
 &lt;img src="../L_2_modern_rasterization_2.png" title="triangle rasterization (double)" alt="" loading="lazy" />
 &lt;figcaption>triangle rasterization (double)&lt;/figcaption>
@@ -161,7 +164,8 @@ title="Copy code"
 &lt;img src="../L_2_modern_rasterization_3.png" title="triangle rasterization (float)" alt="" loading="lazy" />
 &lt;figcaption>triangle rasterization (float)&lt;/figcaption>
 &lt;/figure>&lt;/p>
-&lt;p>The output of scanline rendering and modern rasterization are NOT same. This discrepancy is driven by three technical factors:&lt;/p>
+&lt;p>The output of scanline rendering and modern rasterization are NOT same.
+This discrepancy is driven by three technical factors:&lt;/p>
 &lt;ol>
 &lt;li>quantization errors from integer arithmetic,&lt;/li>
 &lt;li>tie-breaking rules (like the Top-Left rule) for shared edges,&lt;/li>
@@ -199,6 +203,196 @@ This is called &lt;a href="https://en.wikipedia.org/wiki/Linear_interpolation"ta
 &lt;strong class="hx:text-lg">Hidden faces removal&lt;/strong>
 &lt;/summary>
 &lt;div class="hx:p-2 hx:overflow-hidden">
+&lt;p>Each &lt;code>{Model} - add a simple trick&lt;/code> corresponds to &amp;ldquo;&lt;em>Triangle rasterization with a simple trick&lt;/em>&amp;rdquo; homework.
+The difference is in color:&lt;/p>
+&lt;ul>
+&lt;li>solid (random) color := modern rasterization approach + back-face culling&lt;/li>
+&lt;li>gradient color := full-colored triangles by barycentric coordinates&lt;/li>
+&lt;/ul>
+&lt;p>At a glance, it is difficult to distinguish the first image (&lt;code>add a simple trick&lt;/code> ver.) from the second one (&lt;code>painter's algorithm&lt;/code> ver.).
+That&amp;rsquo;s why I visualized the comparison of two images.
+The (&lt;font color="#00FFFF">C&lt;/font>, &lt;font color="#FF00FF">M&lt;/font>, &lt;font color="#FFFF00">Y&lt;/font>) colors indicate region where pixels do not exactly match, by computing pixel-wise difference between two images.&lt;/p>
+&lt;div class="hx:overflow-x-auto hx:mt-6 hx:flex hx:flex-col hx:rounded-lg hx:border hx:py-4 hx:px-4 hx:border-gray-200 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-blue-200 hx:bg-blue-100 hx:text-blue-900 hx:dark:border-blue-200/30 hx:dark:bg-blue-900/30 hx:dark:text-blue-200">
+&lt;p class="hx:flex hx:items-center hx:font-medium">&lt;svg height=16px class="hx:inline-block hx:align-middle hx:mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>&lt;/svg>Note&lt;/p>
+&lt;div class="hx:w-full hx:min-w-0 hx:leading-7">
+&lt;div class="hx:mt-6 hx:leading-7 hx:first:mt-0">&lt;p>The image comparison was implemented using &lt;a href="https://opencv.org/"target="_blank" rel="noopener">OpenCV&lt;/a> in a separate project, and I plan to extend it further.&lt;/p>&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;p>I just wanted to paint all triangles in the rear-to-front order, as presented in the lecture.
+The volume rendering-like effect was made by reconstructing 96 frames into 4 seconds &lt;a href="https://en.wikipedia.org/wiki/GIF"target="_blank" rel="noopener">GIF&lt;/a> with &lt;a href="https://www.ffmpeg.org/"target="_blank" rel="noopener">FFmpeg&lt;/a>.
+In other words, it was encoded at 24 FPS to produce cinematic feeling.&lt;/p>
+&lt;p>&lt;figure>
+&lt;img src="../L_4_painter%27s_algorithm_1.png" title="Diablo - add a simple trick" alt="" loading="lazy" />
+&lt;figcaption>Diablo - add a simple trick&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>&lt;figure>
+&lt;img src="../L_4_painter%27s_algorithm_2.png" title="Diablo - painter&amp;#39;s algorithm" alt="" loading="lazy" />
+&lt;figcaption>Diablo - painter&amp;#39;s algorithm&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>&lt;figure>
+&lt;img src="../L_4_painter%27s_algorithm_3.png" title="Diablo - visualization (pixel difference)" alt="" loading="lazy" />
+&lt;figcaption>Diablo - visualization (pixel difference)&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>&lt;figure>
+&lt;img src="../L_4_painter%27s_algorithm_4_1.gif" title="Diablo - visualization (rear-to-front order)" alt="" loading="lazy" />
+&lt;figcaption>Diablo - visualization (rear-to-front order)&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>&lt;figure>
+&lt;img src="../L_4_painter%27s_algorithm_5.png" title="Boggie (body) - add a simple trick" alt="" loading="lazy" />
+&lt;figcaption>Boggie (body) - add a simple trick&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>&lt;figure>
+&lt;img src="../L_4_painter%27s_algorithm_6.png" title="Boggie (body) - painter&amp;#39;s algorithm" alt="" loading="lazy" />
+&lt;figcaption>Boggie (body) - painter&amp;#39;s algorithm&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>&lt;figure>
+&lt;img src="../L_4_painter%27s_algorithm_7.png" title="Boggie (body) - visualization (pixel difference)" alt="" loading="lazy" />
+&lt;figcaption>Boggie (body) - visualization (pixel difference)&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>&lt;figure>
+&lt;img src="../L_4_painter%27s_algorithm_8_1.gif" title="Boggie (body) - visualization (rear-to-front order)" alt="" loading="lazy" />
+&lt;figcaption>Boggie (body) - visualization (rear-to-front order)&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>&lt;figure>
+&lt;img src="../L_4_painter%27s_algorithm_9.png" title="African head (head) - add a simple trick" alt="" loading="lazy" />
+&lt;figcaption>African head (head) - add a simple trick&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>&lt;figure>
+&lt;img src="../L_4_painter%27s_algorithm_10.png" title="African head (head) - painter&amp;#39;s algorithm" alt="" loading="lazy" />
+&lt;figcaption>African head (head) - painter&amp;#39;s algorithm&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>&lt;figure>
+&lt;img src="../L_4_painter%27s_algorithm_11.png" title="African head (head) - visualization (pixel difference)" alt="" loading="lazy" />
+&lt;figcaption>African head (head) - visualization (pixel difference)&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>&lt;figure>
+&lt;img src="../L_4_painter%27s_algorithm_12_1.gif" title="African head (head) - visualization (rear-to-front order)" alt="" loading="lazy" />
+&lt;figcaption>African head (head) - visualization (rear-to-front order)&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>The initial, yet incomplete depth buffer appears.
+The depth buffer colors represent:&lt;/p>
+&lt;ul>
+&lt;li>black: depth value close to &lt;span class="katex">&lt;span class="katex-mathml">&lt;math xmlns="http://www.w3.org/1998/Math/MathML">&lt;semantics>&lt;mrow>&lt;mn>0&lt;/mn>&lt;/mrow>&lt;annotation encoding="application/x-tex">0&lt;/annotation>&lt;/semantics>&lt;/math>&lt;/span>&lt;span class="katex-html" aria-hidden="true">&lt;span class="base">&lt;span class="strut" style="height:0.6444em;">&lt;/span>&lt;span class="mord">0&lt;/span>&lt;/span>&lt;/span>&lt;/span> (far)&lt;/li>
+&lt;li>white: depth value close to &lt;span class="katex">&lt;span class="katex-mathml">&lt;math xmlns="http://www.w3.org/1998/Math/MathML">&lt;semantics>&lt;mrow>&lt;mn>1&lt;/mn>&lt;/mrow>&lt;annotation encoding="application/x-tex">1&lt;/annotation>&lt;/semantics>&lt;/math>&lt;/span>&lt;span class="katex-html" aria-hidden="true">&lt;span class="base">&lt;span class="strut" style="height:0.6444em;">&lt;/span>&lt;span class="mord">1&lt;/span>&lt;/span>&lt;/span>&lt;/span> or &lt;span class="katex">&lt;span class="katex-mathml">&lt;math xmlns="http://www.w3.org/1998/Math/MathML">&lt;semantics>&lt;mrow>&lt;msup>&lt;mn>2&lt;/mn>&lt;mrow>&lt;mi>b&lt;/mi>&lt;mi>i&lt;/mi>&lt;mi>t&lt;/mi>&lt;mi>s&lt;/mi>&lt;/mrow>&lt;/msup>&lt;mo>−&lt;/mo>&lt;mn>1&lt;/mn>&lt;/mrow>&lt;annotation encoding="application/x-tex">2^{bits} - 1&lt;/annotation>&lt;/semantics>&lt;/math>&lt;/span>&lt;span class="katex-html" aria-hidden="true">&lt;span class="base">&lt;span class="strut" style="height:0.9324em;vertical-align:-0.0833em;">&lt;/span>&lt;span class="mord">&lt;span class="mord">2&lt;/span>&lt;span class="msupsub">&lt;span class="vlist-t">&lt;span class="vlist-r">&lt;span class="vlist" style="height:0.8491em;">&lt;span style="top:-3.063em;margin-right:0.05em;">&lt;span class="pstrut" style="height:2.7em;">&lt;/span>&lt;span class="sizing reset-size6 size3 mtight">&lt;span class="mord mtight">&lt;span class="mord mathnormal mtight">bi&lt;/span>&lt;span class="mord mathnormal mtight">t&lt;/span>&lt;span class="mord mathnormal mtight">s&lt;/span>&lt;/span>&lt;/span>&lt;/span>&lt;/span>&lt;/span>&lt;/span>&lt;/span>&lt;/span>&lt;span class="mspace" style="margin-right:0.2222em;">&lt;/span>&lt;span class="mbin">−&lt;/span>&lt;span class="mspace" style="margin-right:0.2222em;">&lt;/span>&lt;/span>&lt;span class="base">&lt;span class="strut" style="height:0.6444em;">&lt;/span>&lt;span class="mord">1&lt;/span>&lt;/span>&lt;/span>&lt;/span> (near)&lt;/li>
+&lt;/ul>
+&lt;p>This is because the depth buffer is initialized to 0, which corresponds to black.&lt;/p>
+&lt;p>&lt;figure>
+&lt;img src="../L_4_depth_interpolation_1.png" title="Diablo - depth interpolation (Z-buffer)" alt="" loading="lazy" />
+&lt;figcaption>Diablo - depth interpolation (Z-buffer)&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>&lt;figure>
+&lt;img src="../L_4_depth_interpolation_2.png" title="Diablo - depth interpolation (Framebuffer)" alt="" loading="lazy" />
+&lt;figcaption>Diablo - depth interpolation (Framebuffer)&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>&lt;figure>
+&lt;img src="../L_4_depth_interpolation_3.png" title="Boggie (body) - depth interpolation (Z-buffer)" alt="" loading="lazy" />
+&lt;figcaption>Boggie (body) - depth interpolation (Z-buffer)&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>&lt;figure>
+&lt;img src="../L_4_depth_interpolation_4.png" title="Boggie (body) - depth interpolation (Framebuffer)" alt="" loading="lazy" />
+&lt;figcaption>Boggie (body) - depth interpolation (Framebuffer)&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>&lt;figure>
+&lt;img src="../L_4_depth_interpolation_5.png" title="African head (head) - depth interpolation (Z-buffer)" alt="" loading="lazy" />
+&lt;figcaption>African head (head) - depth interpolation (Z-buffer)&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>&lt;figure>
+&lt;img src="../L_4_depth_interpolation_6.png" title="African head (head) - depth interpolation (Framebuffer)" alt="" loading="lazy" />
+&lt;figcaption>African head (head) - depth interpolation (Framebuffer)&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>Once updated to the nearest depth value per pixel, the result (Z-buffer) is finally complete.
+Compared to the previous incomplete depth buffer, grayscale gradation becomes even smoother.
+The volume rendering-like effect is made in a similar manner.&lt;/p>
+&lt;div class="hx:overflow-x-auto hx:mt-6 hx:flex hx:flex-col hx:rounded-lg hx:border hx:py-4 hx:px-4 hx:border-gray-200 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-amber-200 hx:bg-amber-100 hx:text-amber-900 hx:dark:border-amber-200/30 hx:dark:bg-amber-900/30 hx:dark:text-amber-200">
+&lt;p class="hx:flex hx:items-center hx:font-medium">&lt;svg height=16px class="hx:inline-block hx:align-middle hx:mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>&lt;/svg>Warning&lt;/p>
+&lt;div class="hx:w-full hx:min-w-0 hx:leading-7">
+&lt;div class="hx:mt-6 hx:leading-7 hx:first:mt-0">&lt;p>In Painter&amp;rsquo;s algorithm, the effect appears at the triangle level, whereas here it appears at the pixel level. This still differs from actual &lt;a href="https://en.wikipedia.org/wiki/Volume_rendering"target="_blank" rel="noopener">volume rendering&lt;/a>, as all but a single depth value are discarded by the Z-buffer.&lt;/p>&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;p>&lt;figure>
+&lt;img src="../L_4_Z-buffer_1.png" title="Diablo - per-pixel painter&amp;#39;s algorithm (Z-buffer, front view)" alt="" loading="lazy" />
+&lt;figcaption>Diablo - per-pixel painter&amp;#39;s algorithm (Z-buffer, front view)&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>&lt;figure>
+&lt;img src="../L_4_Z-buffer_2.png" title="Diablo - per-pixel painter&amp;#39;s algorithm (Framebuffer, front view)" alt="" loading="lazy" />
+&lt;figcaption>Diablo - per-pixel painter&amp;#39;s algorithm (Framebuffer, front view)&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>&lt;figure>
+&lt;img src="../L_4_Z-buffer_3.png" title="Diablo - per-pixel painter&amp;#39;s algorithm (Z-buffer, left view)" alt="" loading="lazy" />
+&lt;figcaption>Diablo - per-pixel painter&amp;#39;s algorithm (Z-buffer, left view)&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>&lt;figure>
+&lt;img src="../L_4_Z-buffer_4.png" title="Diablo - per-pixel painter&amp;#39;s algorithm (Framebuffer, left view)" alt="" loading="lazy" />
+&lt;figcaption>Diablo - per-pixel painter&amp;#39;s algorithm (Framebuffer, left view)&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>&lt;figure>
+&lt;img src="../L_4_Z-buffer_5.png" title="Diablo - per-pixel painter&amp;#39;s algorithm (Z-buffer, top view)" alt="" loading="lazy" />
+&lt;figcaption>Diablo - per-pixel painter&amp;#39;s algorithm (Z-buffer, top view)&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>&lt;figure>
+&lt;img src="../L_4_Z-buffer_6.png" title="Diablo - per-pixel painter&amp;#39;s algorithm (Framebuffer, top view)" alt="" loading="lazy" />
+&lt;figcaption>Diablo - per-pixel painter&amp;#39;s algorithm (Framebuffer, top view)&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>&lt;figure>
+&lt;img src="../L_4_Z-buffer_7.gif" title="Diablo - visualization (rear-to-front order)" alt="" loading="lazy" />
+&lt;figcaption>Diablo - visualization (rear-to-front order)&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>&lt;figure>
+&lt;img src="../L_4_Z-buffer_8.png" title="Boggie (body) - per-pixel painter&amp;#39;s algorithm (Z-buffer, front view)" alt="" loading="lazy" />
+&lt;figcaption>Boggie (body) - per-pixel painter&amp;#39;s algorithm (Z-buffer, front view)&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>&lt;figure>
+&lt;img src="../L_4_Z-buffer_9.png" title="Boggie (body) - per-pixel painter&amp;#39;s algorithm (Framebuffer, front view)" alt="" loading="lazy" />
+&lt;figcaption>Boggie (body) - per-pixel painter&amp;#39;s algorithm (Framebuffer, front view)&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>&lt;figure>
+&lt;img src="../L_4_Z-buffer_10.png" title="Boggie (body) - per-pixel painter&amp;#39;s algorithm (Z-buffer, left view)" alt="" loading="lazy" />
+&lt;figcaption>Boggie (body) - per-pixel painter&amp;#39;s algorithm (Z-buffer, left view)&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>&lt;figure>
+&lt;img src="../L_4_Z-buffer_11.png" title="Boggie (body) - per-pixel painter&amp;#39;s algorithm (Framebuffer, left view)" alt="" loading="lazy" />
+&lt;figcaption>Boggie (body) - per-pixel painter&amp;#39;s algorithm (Framebuffer, left view)&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>&lt;figure>
+&lt;img src="../L_4_Z-buffer_12.png" title="Boggie (body) - per-pixel painter&amp;#39;s algorithm (Z-buffer, top view)" alt="" loading="lazy" />
+&lt;figcaption>Boggie (body) - per-pixel painter&amp;#39;s algorithm (Z-buffer, top view)&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>&lt;figure>
+&lt;img src="../L_4_Z-buffer_13.png" title="Boggie (body) - per-pixel painter&amp;#39;s algorithm (Framebuffer, top view)" alt="" loading="lazy" />
+&lt;figcaption>Boggie (body) - per-pixel painter&amp;#39;s algorithm (Framebuffer, top view)&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>&lt;figure>
+&lt;img src="../L_4_Z-buffer_14.gif" title="Boggie (body) - visualization (rear-to-front order)" alt="" loading="lazy" />
+&lt;figcaption>Boggie (body) - visualization (rear-to-front order)&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>&lt;figure>
+&lt;img src="../L_4_Z-buffer_15.png" title="African head (head) - per-pixel painter&amp;#39;s algorithm (Z-buffer, front view)" alt="" loading="lazy" />
+&lt;figcaption>African head (head) - per-pixel painter&amp;#39;s algorithm (Z-buffer, front view)&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>&lt;figure>
+&lt;img src="../L_4_Z-buffer_16.png" title="African head (head) - per-pixel painter&amp;#39;s algorithm (Framebuffer, front view)" alt="" loading="lazy" />
+&lt;figcaption>African head (head) - per-pixel painter&amp;#39;s algorithm (Framebuffer, front view)&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>&lt;figure>
+&lt;img src="../L_4_Z-buffer_17.png" title="African head (head) - per-pixel painter&amp;#39;s algorithm (Z-buffer, left view)" alt="" loading="lazy" />
+&lt;figcaption>African head (head) - per-pixel painter&amp;#39;s algorithm (Z-buffer, left view)&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>&lt;figure>
+&lt;img src="../L_4_Z-buffer_18.png" title="African head (head) - per-pixel painter&amp;#39;s algorithm (Framebuffer, left view)" alt="" loading="lazy" />
+&lt;figcaption>African head (head) - per-pixel painter&amp;#39;s algorithm (Framebuffer, left view)&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>&lt;figure>
+&lt;img src="../L_4_Z-buffer_19.png" title="African head (head) - per-pixel painter&amp;#39;s algorithm (Z-buffer, top view)" alt="" loading="lazy" />
+&lt;figcaption>African head (head) - per-pixel painter&amp;#39;s algorithm (Z-buffer, top view)&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>&lt;figure>
+&lt;img src="../L_4_Z-buffer_20.png" title="African head (head) - per-pixel painter&amp;#39;s algorithm (Framebuffer, top view)" alt="" loading="lazy" />
+&lt;figcaption>African head (head) - per-pixel painter&amp;#39;s algorithm (Framebuffer, top view)&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>&lt;figure>
+&lt;img src="../L_4_Z-buffer_21.gif" title="African head (head) - visualization (rear-to-front order)" alt="" loading="lazy" />
+&lt;figcaption>African head (head) - visualization (rear-to-front order)&lt;/figcaption>
+&lt;/figure>&lt;/p>
 &lt;/div>
 &lt;/details>
 &lt;details class="hx:last-of-type:mb-0 hx:rounded-lg hx:bg-neutral-50 hx:dark:bg-neutral-800 hx:p-2 hx:mt-4 hx:group" >
@@ -267,7 +461,8 @@ This is called &lt;a href="https://en.wikipedia.org/wiki/Linear_interpolation"ta
 &lt;img src="../Diablo_3_trailer.jpg" title="Diablo" alt="" loading="lazy" />
 &lt;figcaption>Diablo&lt;/figcaption>
 &lt;/figure>&lt;/p>
-&lt;p>You can see the actual appearance in &lt;a href="https://www.youtube.com/watch?v=ftnpGWFaEsQ"target="_blank" rel="noopener">this video&lt;/a>. (Ref. &lt;a href="https://www.artstation.com/artwork/mD9AY"target="_blank" rel="noopener">Diablo Ⅲ Cinematics&lt;/a>)&lt;/p>
+&lt;p>You can see the actual appearance in &lt;a href="https://www.youtube.com/watch?v=ftnpGWFaEsQ"target="_blank" rel="noopener">this video&lt;/a>.
+(Ref. &lt;a href="https://www.artstation.com/artwork/mD9AY"target="_blank" rel="noopener">Diablo Ⅲ Cinematics&lt;/a>)&lt;/p>
 &lt;p>&lt;figure>
 &lt;img src="../HW_1_Model_editor_Z.png" title="Diablo - front view (Visual Studio Model editor)" alt="" loading="lazy" />
 &lt;figcaption>Diablo - front view (Visual Studio Model editor)&lt;/figcaption>
@@ -419,7 +614,8 @@ This is called &lt;a href="https://en.wikipedia.org/wiki/Linear_interpolation"ta
 &lt;img src="../HW_3_intersection_area.png" title="visualization (white: intersection)" alt="" loading="lazy" />
 &lt;figcaption>visualization (white: intersection)&lt;/figcaption>
 &lt;/figure>&lt;/p>
-&lt;p>It looks like I can subtract the white triangle area from the whole triangle. Professor, would &lt;span class="katex">&lt;span class="katex-mathml">&lt;math xmlns="http://www.w3.org/1998/Math/MathML">&lt;semantics>&lt;mrow>&lt;mn>0.1&lt;/mn>&lt;/mrow>&lt;annotation encoding="application/x-tex">0.1&lt;/annotation>&lt;/semantics>&lt;/math>&lt;/span>&lt;span class="katex-html" aria-hidden="true">&lt;span class="base">&lt;span class="strut" style="height:0.6444em;">&lt;/span>&lt;span class="mord">0.1&lt;/span>&lt;/span>&lt;/span>&lt;/span> be the magic number?&lt;/p>
+&lt;p>It looks like I can subtract the white triangle area from the whole triangle.
+Professor, would &lt;span class="katex">&lt;span class="katex-mathml">&lt;math xmlns="http://www.w3.org/1998/Math/MathML">&lt;semantics>&lt;mrow>&lt;mn>0.1&lt;/mn>&lt;/mrow>&lt;annotation encoding="application/x-tex">0.1&lt;/annotation>&lt;/semantics>&lt;/math>&lt;/span>&lt;span class="katex-html" aria-hidden="true">&lt;span class="base">&lt;span class="strut" style="height:0.6444em;">&lt;/span>&lt;span class="mord">0.1&lt;/span>&lt;/span>&lt;/span>&lt;/span> be the magic number?&lt;/p>
 &lt;p>&lt;figure>
 &lt;img src="../HW_3_wireframe_triangle.png" title="wireframe triangle" alt="" loading="lazy" />
 &lt;figcaption>wireframe triangle&lt;/figcaption>
@@ -435,7 +631,8 @@ This is called &lt;a href="https://en.wikipedia.org/wiki/Linear_interpolation"ta
 &lt;p>    &amp;ldquo;For we are bound by the Khala&amp;hellip;the sacred union of our every thought and emotion.&amp;quot;&lt;br>&lt;br>
 — &lt;a href="https://starcraft.fandom.com/wiki/Khala"target="_blank" rel="noopener">Hierarch Artanis (StarCraft Wiki)&lt;/a>&lt;/p>
 &lt;/blockquote>
-&lt;p>In full-colored models, I can observe consistent patterns. In contrast, in wireframe models, the thickness of wireframe effect is proportional to the size of each triangle, so it is NOT uniform.&lt;/p>
+&lt;p>In full-colored models, I can observe consistent patterns.
+In contrast, in wireframe models, the thickness of wireframe effect is proportional to the size of each triangle, so it is NOT uniform.&lt;/p>
 &lt;p>&lt;figure>
 &lt;img src="../HW_3_full-colored_diablo3.png" title="full-colored Diablo" alt="" loading="lazy" />
 &lt;figcaption>full-colored Diablo&lt;/figcaption>
@@ -462,10 +659,328 @@ This is called &lt;a href="https://en.wikipedia.org/wiki/Linear_interpolation"ta
 &lt;/figure>&lt;/p>
 &lt;/div>
 &lt;/details>
+&lt;details class="hx:last-of-type:mb-0 hx:rounded-lg hx:bg-neutral-50 hx:dark:bg-neutral-800 hx:p-2 hx:mt-4 hx:group" >
+&lt;summary class="hx:flex hx:items-center hx:cursor-pointer hx:select-none hx:list-none hx:p-1 hx:rounded-sm hx:transition-colors hx:hover:bg-gray-100 hx:dark:hover:bg-neutral-800 hx:before:mr-1 hx:before:inline-block hx:before:transition-transform hx:before:content-[''] hx:dark:before:invert hx:rtl:before:rotate-180 hx:group-open:before:rotate-90">
+&lt;strong class="hx:text-lg">Graphics mathematics&lt;/strong>
+&lt;/summary>
+&lt;div class="hx:p-2 hx:overflow-hidden">
+&lt;p>Graphics mathematics templates are based on three design choices:&lt;/p>
+&lt;ol>
+&lt;li>Adopt a &lt;u>column-major&lt;/u> layout to align with the convention used by &lt;strong>GLM&lt;/strong>, &lt;strong>OpenGL&lt;/strong>, and &lt;strong>Vulkan&lt;/strong>.&lt;/li>
+&lt;li>Apply &lt;u>modern C++ features&lt;/u> such as &lt;code>constexpr&lt;/code> and &lt;code>[[nodiscard]]&lt;/code> to make the code more robust and expressive.&lt;/li>
+&lt;li>Take care to &lt;u>document&lt;/u> each function with mathematical details so that its intent is clear.&lt;/li>
+&lt;/ol>
+&lt;details class="hx:last-of-type:mb-0 hx:rounded-lg hx:bg-neutral-50 hx:dark:bg-neutral-800 hx:p-2 hx:mt-4 hx:group" >
+&lt;summary class="hx:flex hx:items-center hx:cursor-pointer hx:select-none hx:list-none hx:p-1 hx:rounded-sm hx:transition-colors hx:hover:bg-gray-100 hx:dark:hover:bg-neutral-800 hx:before:mr-1 hx:before:inline-block hx:before:transition-transform hx:before:content-[''] hx:dark:before:invert hx:rtl:before:rotate-180 hx:group-open:before:rotate-90">
+&lt;strong class="hx:text-lg">vector&lt;/strong>
+&lt;/summary>
+&lt;div class="hx:p-2 hx:overflow-hidden">
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+&lt;div class="hextra-code-filename not-prose" dir="auto">C&amp;#43;&amp;#43;&lt;/div>&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-cpp" data-lang="cpp">&lt;span class="line">&lt;span class="cl">&lt;span class="k">template&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="kt">int&lt;/span> &lt;span class="n">N&lt;/span>&lt;span class="o">&amp;gt;&lt;/span> &lt;span class="k">struct&lt;/span> &lt;span class="nc">vec&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kt">double&lt;/span> &lt;span class="n">data&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">N&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">{};&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// i-th element
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="k">constexpr&lt;/span> &lt;span class="kt">double&lt;/span>&lt;span class="o">&amp;amp;&lt;/span> &lt;span class="k">operator&lt;/span>&lt;span class="p">[](&lt;/span>&lt;span class="kt">int&lt;/span> &lt;span class="n">i&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">assert&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">i&lt;/span> &lt;span class="o">&amp;gt;=&lt;/span> &lt;span class="mi">0&lt;/span> &lt;span class="o">&amp;amp;&amp;amp;&lt;/span> &lt;span class="n">i&lt;/span> &lt;span class="o">&amp;lt;&lt;/span> &lt;span class="n">N&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">data&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="p">];&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">constexpr&lt;/span> &lt;span class="kt">double&lt;/span> &lt;span class="k">operator&lt;/span>&lt;span class="p">[](&lt;/span>&lt;span class="kt">int&lt;/span> &lt;span class="n">i&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="k">const&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">assert&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">i&lt;/span> &lt;span class="o">&amp;gt;=&lt;/span> &lt;span class="mi">0&lt;/span> &lt;span class="o">&amp;amp;&amp;amp;&lt;/span> &lt;span class="n">i&lt;/span> &lt;span class="o">&amp;lt;&lt;/span> &lt;span class="n">N&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">data&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="p">];&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">};&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// addition (component-wise)
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="k">template&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="kt">int&lt;/span> &lt;span class="n">N&lt;/span>&lt;span class="o">&amp;gt;&lt;/span> &lt;span class="k">constexpr&lt;/span> &lt;span class="n">vec&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="n">N&lt;/span>&lt;span class="o">&amp;gt;&lt;/span> &lt;span class="k">operator&lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">vec&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="n">N&lt;/span>&lt;span class="o">&amp;gt;&lt;/span> &lt;span class="n">a&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="k">const&lt;/span> &lt;span class="n">vec&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="n">N&lt;/span>&lt;span class="o">&amp;gt;&amp;amp;&lt;/span> &lt;span class="n">b&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">for&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="kt">int&lt;/span> &lt;span class="n">i&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">N&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="n">i&lt;/span>&lt;span class="o">--&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="n">a&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">+=&lt;/span> &lt;span class="n">b&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="p">])&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">a&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// subtraction (component-wise)
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="k">template&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="kt">int&lt;/span> &lt;span class="n">N&lt;/span>&lt;span class="o">&amp;gt;&lt;/span> &lt;span class="k">constexpr&lt;/span> &lt;span class="n">vec&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="n">N&lt;/span>&lt;span class="o">&amp;gt;&lt;/span> &lt;span class="k">operator&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">vec&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="n">N&lt;/span>&lt;span class="o">&amp;gt;&lt;/span> &lt;span class="n">a&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="k">const&lt;/span> &lt;span class="n">vec&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="n">N&lt;/span>&lt;span class="o">&amp;gt;&amp;amp;&lt;/span> &lt;span class="n">b&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">for&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="kt">int&lt;/span> &lt;span class="n">i&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">N&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="n">i&lt;/span>&lt;span class="o">--&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="n">a&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">-=&lt;/span> &lt;span class="n">b&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="p">])&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">a&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// multiplication: vector x scalar (component-wise)
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="k">template&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="kt">int&lt;/span> &lt;span class="n">N&lt;/span>&lt;span class="o">&amp;gt;&lt;/span> &lt;span class="k">constexpr&lt;/span> &lt;span class="n">vec&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="n">N&lt;/span>&lt;span class="o">&amp;gt;&lt;/span> &lt;span class="k">operator&lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">vec&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="n">N&lt;/span>&lt;span class="o">&amp;gt;&lt;/span> &lt;span class="n">v&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="kt">double&lt;/span> &lt;span class="n">s&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">for&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="kt">int&lt;/span> &lt;span class="n">i&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">N&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="n">i&lt;/span>&lt;span class="o">--&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="n">v&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">*=&lt;/span> &lt;span class="n">s&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">v&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// multiplication: scalar x vector (component-wise)
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="k">template&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="kt">int&lt;/span> &lt;span class="n">N&lt;/span>&lt;span class="o">&amp;gt;&lt;/span> &lt;span class="k">constexpr&lt;/span> &lt;span class="n">vec&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="n">N&lt;/span>&lt;span class="o">&amp;gt;&lt;/span> &lt;span class="k">operator&lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="kt">double&lt;/span> &lt;span class="n">s&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">vec&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="n">N&lt;/span>&lt;span class="o">&amp;gt;&lt;/span> &lt;span class="n">v&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="k">return&lt;/span> &lt;span class="n">v&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="n">s&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// division: vector / scalar (component-wise)
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="k">template&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="kt">int&lt;/span> &lt;span class="n">N&lt;/span>&lt;span class="o">&amp;gt;&lt;/span> &lt;span class="k">constexpr&lt;/span> &lt;span class="n">vec&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="n">N&lt;/span>&lt;span class="o">&amp;gt;&lt;/span> &lt;span class="k">operator&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">vec&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="n">N&lt;/span>&lt;span class="o">&amp;gt;&lt;/span> &lt;span class="n">v&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="kt">double&lt;/span> &lt;span class="n">s&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">for&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="kt">int&lt;/span> &lt;span class="n">i&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">N&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="n">i&lt;/span>&lt;span class="o">--&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="n">v&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">/=&lt;/span> &lt;span class="n">s&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">v&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// dot product (sum of component-wise multiplication)
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="k">template&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="kt">int&lt;/span> &lt;span class="n">N&lt;/span>&lt;span class="o">&amp;gt;&lt;/span> &lt;span class="k">constexpr&lt;/span> &lt;span class="kt">double&lt;/span> &lt;span class="k">operator&lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="k">const&lt;/span> &lt;span class="n">vec&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="n">N&lt;/span>&lt;span class="o">&amp;gt;&amp;amp;&lt;/span> &lt;span class="n">a&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="k">const&lt;/span> &lt;span class="n">vec&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="n">N&lt;/span>&lt;span class="o">&amp;gt;&amp;amp;&lt;/span> &lt;span class="n">b&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kt">double&lt;/span> &lt;span class="n">sum&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">for&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="kt">int&lt;/span> &lt;span class="n">i&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">N&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="n">i&lt;/span>&lt;span class="o">--&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="n">sum&lt;/span> &lt;span class="o">+=&lt;/span> &lt;span class="n">a&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="n">b&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="p">])&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">sum&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// stream output
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="k">template&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="kt">int&lt;/span> &lt;span class="n">N&lt;/span>&lt;span class="o">&amp;gt;&lt;/span> &lt;span class="n">std&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="n">ostream&lt;/span>&lt;span class="o">&amp;amp;&lt;/span> &lt;span class="k">operator&lt;/span>&lt;span class="o">&amp;lt;&amp;lt;&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">std&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="n">ostream&lt;/span>&lt;span class="o">&amp;amp;&lt;/span> &lt;span class="n">out&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="k">const&lt;/span> &lt;span class="n">vec&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="n">N&lt;/span>&lt;span class="o">&amp;gt;&amp;amp;&lt;/span> &lt;span class="n">v&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">for&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="kt">int&lt;/span> &lt;span class="n">i&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="n">i&lt;/span> &lt;span class="o">&amp;lt;&lt;/span> &lt;span class="n">N&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="o">++&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">out&lt;/span> &lt;span class="o">&amp;lt;&amp;lt;&lt;/span> &lt;span class="n">v&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">&amp;lt;&amp;lt;&lt;/span> &lt;span class="s">&amp;#34; &amp;#34;&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">out&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// L2 norm: ||v||
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="k">template&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="kt">int&lt;/span> &lt;span class="n">N&lt;/span>&lt;span class="o">&amp;gt;&lt;/span> &lt;span class="kt">double&lt;/span> &lt;span class="n">norm&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="k">const&lt;/span> &lt;span class="n">vec&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="n">N&lt;/span>&lt;span class="o">&amp;gt;&amp;amp;&lt;/span> &lt;span class="n">v&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="k">return&lt;/span> &lt;span class="n">std&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="n">sqrt&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">v&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="n">v&lt;/span>&lt;span class="p">);&lt;/span> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// normalization: v / ||v||
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="k">template&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="kt">int&lt;/span> &lt;span class="n">N&lt;/span>&lt;span class="o">&amp;gt;&lt;/span> &lt;span class="n">vec&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="n">N&lt;/span>&lt;span class="o">&amp;gt;&lt;/span> &lt;span class="n">normalized&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="k">const&lt;/span> &lt;span class="n">vec&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="n">N&lt;/span>&lt;span class="o">&amp;gt;&amp;amp;&lt;/span> &lt;span class="n">v&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="k">return&lt;/span> &lt;span class="n">v&lt;/span> &lt;span class="o">/&lt;/span> &lt;span class="n">norm&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">v&lt;/span>&lt;span class="p">);&lt;/span> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">template&lt;/span>&lt;span class="o">&amp;lt;&amp;gt;&lt;/span> &lt;span class="k">struct&lt;/span> &lt;span class="nc">vec&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="mi">2&lt;/span>&lt;span class="o">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kt">double&lt;/span> &lt;span class="n">x&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">y&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">constexpr&lt;/span> &lt;span class="kt">double&lt;/span>&lt;span class="o">&amp;amp;&lt;/span> &lt;span class="k">operator&lt;/span>&lt;span class="p">[](&lt;/span>&lt;span class="kt">int&lt;/span> &lt;span class="n">i&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">assert&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">i&lt;/span> &lt;span class="o">&amp;gt;=&lt;/span> &lt;span class="mi">0&lt;/span> &lt;span class="o">&amp;amp;&amp;amp;&lt;/span> &lt;span class="n">i&lt;/span> &lt;span class="o">&amp;lt;&lt;/span> &lt;span class="mi">2&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">i&lt;/span> &lt;span class="o">?&lt;/span> &lt;span class="nl">y&lt;/span> &lt;span class="p">:&lt;/span> &lt;span class="n">x&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">constexpr&lt;/span> &lt;span class="kt">double&lt;/span> &lt;span class="k">operator&lt;/span>&lt;span class="p">[](&lt;/span>&lt;span class="kt">int&lt;/span> &lt;span class="n">i&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="k">const&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">assert&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">i&lt;/span> &lt;span class="o">&amp;gt;=&lt;/span> &lt;span class="mi">0&lt;/span> &lt;span class="o">&amp;amp;&amp;amp;&lt;/span> &lt;span class="n">i&lt;/span> &lt;span class="o">&amp;lt;&lt;/span> &lt;span class="mi">2&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">i&lt;/span> &lt;span class="o">?&lt;/span> &lt;span class="nl">y&lt;/span> &lt;span class="p">:&lt;/span> &lt;span class="n">x&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">};&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">template&lt;/span>&lt;span class="o">&amp;lt;&amp;gt;&lt;/span> &lt;span class="k">struct&lt;/span> &lt;span class="nc">vec&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="mi">3&lt;/span>&lt;span class="o">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kt">double&lt;/span> &lt;span class="n">x&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">y&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">z&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">constexpr&lt;/span> &lt;span class="kt">double&lt;/span>&lt;span class="o">&amp;amp;&lt;/span> &lt;span class="k">operator&lt;/span>&lt;span class="p">[](&lt;/span>&lt;span class="kt">int&lt;/span> &lt;span class="n">i&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">assert&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">i&lt;/span> &lt;span class="o">&amp;gt;=&lt;/span> &lt;span class="mi">0&lt;/span> &lt;span class="o">&amp;amp;&amp;amp;&lt;/span> &lt;span class="n">i&lt;/span> &lt;span class="o">&amp;lt;&lt;/span> &lt;span class="mi">3&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">i&lt;/span> &lt;span class="o">?&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="mi">1&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="n">i&lt;/span> &lt;span class="o">?&lt;/span> &lt;span class="nl">y&lt;/span> &lt;span class="p">:&lt;/span> &lt;span class="n">z&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">:&lt;/span> &lt;span class="n">x&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">constexpr&lt;/span> &lt;span class="kt">double&lt;/span> &lt;span class="k">operator&lt;/span>&lt;span class="p">[](&lt;/span>&lt;span class="kt">int&lt;/span> &lt;span class="n">i&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="k">const&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">assert&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">i&lt;/span> &lt;span class="o">&amp;gt;=&lt;/span> &lt;span class="mi">0&lt;/span> &lt;span class="o">&amp;amp;&amp;amp;&lt;/span> &lt;span class="n">i&lt;/span> &lt;span class="o">&amp;lt;&lt;/span> &lt;span class="mi">3&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">i&lt;/span> &lt;span class="o">?&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="mi">1&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="n">i&lt;/span> &lt;span class="o">?&lt;/span> &lt;span class="nl">y&lt;/span> &lt;span class="p">:&lt;/span> &lt;span class="n">z&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">:&lt;/span> &lt;span class="n">x&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">};&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// cross product: a × b (for vec3)
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// perpendicular to both a and b
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// magnitude: |a||b|sin(theta)
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="kr">inline&lt;/span> &lt;span class="n">vec&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="mi">3&lt;/span>&lt;span class="o">&amp;gt;&lt;/span> &lt;span class="n">cross&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="k">const&lt;/span> &lt;span class="n">vec&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="mi">3&lt;/span>&lt;span class="o">&amp;gt;&amp;amp;&lt;/span> &lt;span class="n">a&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="k">const&lt;/span> &lt;span class="n">vec&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="mi">3&lt;/span>&lt;span class="o">&amp;gt;&amp;amp;&lt;/span> &lt;span class="n">b&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="p">{&lt;/span>&lt;span class="n">a&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">y&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="n">b&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">z&lt;/span> &lt;span class="o">-&lt;/span> &lt;span class="n">a&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">z&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="n">b&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">y&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">a&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">z&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="n">b&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">x&lt;/span> &lt;span class="o">-&lt;/span> &lt;span class="n">a&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">x&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="n">b&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">z&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">a&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">x&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="n">b&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">y&lt;/span> &lt;span class="o">-&lt;/span> &lt;span class="n">a&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">y&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="n">b&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">x&lt;/span>&lt;span class="p">};&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">template&lt;/span>&lt;span class="o">&amp;lt;&amp;gt;&lt;/span> &lt;span class="k">struct&lt;/span> &lt;span class="nc">vec&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="mi">4&lt;/span>&lt;span class="o">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kt">double&lt;/span> &lt;span class="n">x&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">y&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">z&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">w&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">constexpr&lt;/span> &lt;span class="kt">double&lt;/span>&lt;span class="o">&amp;amp;&lt;/span> &lt;span class="k">operator&lt;/span>&lt;span class="p">[](&lt;/span>&lt;span class="kt">int&lt;/span> &lt;span class="n">i&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">assert&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">i&lt;/span> &lt;span class="o">&amp;gt;=&lt;/span> &lt;span class="mi">0&lt;/span> &lt;span class="o">&amp;amp;&amp;amp;&lt;/span> &lt;span class="n">i&lt;/span> &lt;span class="o">&amp;lt;&lt;/span> &lt;span class="mi">4&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">i&lt;/span> &lt;span class="o">&amp;lt;&lt;/span> &lt;span class="mi">2&lt;/span> &lt;span class="o">?&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">i&lt;/span> &lt;span class="o">?&lt;/span> &lt;span class="nl">y&lt;/span> &lt;span class="p">:&lt;/span> &lt;span class="n">x&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">:&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="mi">2&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="n">i&lt;/span> &lt;span class="o">?&lt;/span> &lt;span class="nl">z&lt;/span> &lt;span class="p">:&lt;/span> &lt;span class="n">w&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">constexpr&lt;/span> &lt;span class="kt">double&lt;/span> &lt;span class="k">operator&lt;/span>&lt;span class="p">[](&lt;/span>&lt;span class="kt">int&lt;/span> &lt;span class="n">i&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="k">const&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">assert&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">i&lt;/span> &lt;span class="o">&amp;gt;=&lt;/span> &lt;span class="mi">0&lt;/span> &lt;span class="o">&amp;amp;&amp;amp;&lt;/span> &lt;span class="n">i&lt;/span> &lt;span class="o">&amp;lt;&lt;/span> &lt;span class="mi">4&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">i&lt;/span> &lt;span class="o">&amp;lt;&lt;/span> &lt;span class="mi">2&lt;/span> &lt;span class="o">?&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">i&lt;/span> &lt;span class="o">?&lt;/span> &lt;span class="nl">y&lt;/span> &lt;span class="p">:&lt;/span> &lt;span class="n">x&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">:&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="mi">2&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="n">i&lt;/span> &lt;span class="o">?&lt;/span> &lt;span class="nl">z&lt;/span> &lt;span class="p">:&lt;/span> &lt;span class="n">w&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">constexpr&lt;/span> &lt;span class="n">vec&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="mi">2&lt;/span>&lt;span class="o">&amp;gt;&lt;/span> &lt;span class="n">xy&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="k">const&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="k">return&lt;/span> &lt;span class="p">{&lt;/span>&lt;span class="n">x&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">y&lt;/span>&lt;span class="p">};&lt;/span> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">constexpr&lt;/span> &lt;span class="n">vec&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="mi">3&lt;/span>&lt;span class="o">&amp;gt;&lt;/span> &lt;span class="n">xyz&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="k">const&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="k">return&lt;/span> &lt;span class="p">{&lt;/span>&lt;span class="n">x&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">y&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">z&lt;/span>&lt;span class="p">};&lt;/span> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">};&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// type alias
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="k">using&lt;/span> &lt;span class="n">vec2&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">vec&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="mi">2&lt;/span>&lt;span class="o">&amp;gt;&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">using&lt;/span> &lt;span class="n">vec3&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">vec&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="mi">3&lt;/span>&lt;span class="o">&amp;gt;&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">using&lt;/span> &lt;span class="n">vec4&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">vec&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="mi">4&lt;/span>&lt;span class="o">&amp;gt;&lt;/span>&lt;span class="p">;&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-8">
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Copy code"
+>
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4">&lt;/div>
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/details>
+&lt;details class="hx:last-of-type:mb-0 hx:rounded-lg hx:bg-neutral-50 hx:dark:bg-neutral-800 hx:p-2 hx:mt-4 hx:group" >
+&lt;summary class="hx:flex hx:items-center hx:cursor-pointer hx:select-none hx:list-none hx:p-1 hx:rounded-sm hx:transition-colors hx:hover:bg-gray-100 hx:dark:hover:bg-neutral-800 hx:before:mr-1 hx:before:inline-block hx:before:transition-transform hx:before:content-[''] hx:dark:before:invert hx:rtl:before:rotate-180 hx:group-open:before:rotate-90">
+&lt;strong class="hx:text-lg">matrix (column-major)&lt;/strong>
+&lt;/summary>
+&lt;div class="hx:p-2 hx:overflow-hidden">
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+&lt;div class="hextra-code-filename not-prose" dir="auto">C&amp;#43;&amp;#43;&lt;/div>&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-cpp" data-lang="cpp">&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// forward declaration
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="k">template&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="kt">int&lt;/span> &lt;span class="n">N&lt;/span>&lt;span class="o">&amp;gt;&lt;/span> &lt;span class="k">struct&lt;/span> &lt;span class="nc">recursive_det&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">template&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="kt">int&lt;/span> &lt;span class="n">R&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="kt">int&lt;/span> &lt;span class="n">C&lt;/span>&lt;span class="o">&amp;gt;&lt;/span> &lt;span class="k">struct&lt;/span> &lt;span class="nc">mat&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">vec&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="n">R&lt;/span>&lt;span class="o">&amp;gt;&lt;/span> &lt;span class="n">col&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">C&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">{};&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// j-th column
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="k">constexpr&lt;/span> &lt;span class="n">vec&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="n">R&lt;/span>&lt;span class="o">&amp;gt;&amp;amp;&lt;/span> &lt;span class="k">operator&lt;/span>&lt;span class="p">[](&lt;/span>&lt;span class="kt">int&lt;/span> &lt;span class="n">j&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">assert&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">j&lt;/span> &lt;span class="o">&amp;gt;=&lt;/span> &lt;span class="mi">0&lt;/span> &lt;span class="o">&amp;amp;&amp;amp;&lt;/span> &lt;span class="n">j&lt;/span> &lt;span class="o">&amp;lt;&lt;/span> &lt;span class="n">C&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">col&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">j&lt;/span>&lt;span class="p">];&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">constexpr&lt;/span> &lt;span class="k">const&lt;/span> &lt;span class="n">vec&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="n">R&lt;/span>&lt;span class="o">&amp;gt;&amp;amp;&lt;/span> &lt;span class="k">operator&lt;/span>&lt;span class="p">[](&lt;/span>&lt;span class="kt">int&lt;/span> &lt;span class="n">j&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="k">const&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">assert&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">j&lt;/span> &lt;span class="o">&amp;gt;=&lt;/span> &lt;span class="mi">0&lt;/span> &lt;span class="o">&amp;amp;&amp;amp;&lt;/span> &lt;span class="n">j&lt;/span> &lt;span class="o">&amp;lt;&lt;/span> &lt;span class="n">C&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">col&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">j&lt;/span>&lt;span class="p">];&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// i-th row -&amp;gt; vec&amp;lt;C&amp;gt;
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="na">[[nodiscard]]&lt;/span> &lt;span class="k">constexpr&lt;/span> &lt;span class="n">vec&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="n">C&lt;/span>&lt;span class="o">&amp;gt;&lt;/span> &lt;span class="n">row&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="kt">int&lt;/span> &lt;span class="n">i&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="k">const&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">vec&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="n">C&lt;/span>&lt;span class="o">&amp;gt;&lt;/span> &lt;span class="n">row_vec&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">for&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="kt">int&lt;/span> &lt;span class="n">j&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">C&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="n">j&lt;/span>&lt;span class="o">--&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="n">row_vec&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">j&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">col&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">j&lt;/span>&lt;span class="p">][&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="p">])&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">row_vec&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// determinant (only square matrix)
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="c1">// Ref. recursive_det&amp;lt;C&amp;gt;::expand
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="na">[[nodiscard]]&lt;/span> &lt;span class="kt">double&lt;/span> &lt;span class="n">det&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="k">const&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">static_assert&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">R&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="n">C&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">recursive_det&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="n">C&lt;/span>&lt;span class="o">&amp;gt;::&lt;/span>&lt;span class="n">expand&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="k">this&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// cofactor matrix (only square matrix)
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="c1">// (1) minor (T: 1 / F: 0)
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="c1">// (2) det(minor) * (-1)^{r + c}
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="na">[[nodiscard]]&lt;/span> &lt;span class="kt">double&lt;/span> &lt;span class="n">cofactor&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="kt">int&lt;/span> &lt;span class="n">r&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="kt">int&lt;/span> &lt;span class="n">c&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="k">const&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">assert&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">r&lt;/span> &lt;span class="o">&amp;gt;=&lt;/span> &lt;span class="mi">0&lt;/span> &lt;span class="o">&amp;amp;&amp;amp;&lt;/span> &lt;span class="n">r&lt;/span> &lt;span class="o">&amp;lt;&lt;/span> &lt;span class="n">R&lt;/span> &lt;span class="o">&amp;amp;&amp;amp;&lt;/span> &lt;span class="n">c&lt;/span> &lt;span class="o">&amp;gt;=&lt;/span> &lt;span class="mi">0&lt;/span> &lt;span class="o">&amp;amp;&amp;amp;&lt;/span> &lt;span class="n">c&lt;/span> &lt;span class="o">&amp;lt;&lt;/span> &lt;span class="n">C&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">mat&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="n">R&lt;/span> &lt;span class="o">-&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">C&lt;/span> &lt;span class="o">-&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="o">&amp;gt;&lt;/span> &lt;span class="n">minor&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">for&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="kt">int&lt;/span> &lt;span class="n">i&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">R&lt;/span> &lt;span class="o">-&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="n">i&lt;/span>&lt;span class="o">--&lt;/span>&lt;span class="p">;)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">for&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="kt">int&lt;/span> &lt;span class="n">j&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">C&lt;/span> &lt;span class="o">-&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="n">j&lt;/span>&lt;span class="o">--&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="n">minor&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">j&lt;/span>&lt;span class="p">][&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">col&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">j&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">j&lt;/span> &lt;span class="o">&amp;gt;=&lt;/span> &lt;span class="n">c&lt;/span>&lt;span class="p">)][&lt;/span>&lt;span class="n">i&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">i&lt;/span> &lt;span class="o">&amp;gt;=&lt;/span> &lt;span class="n">r&lt;/span>&lt;span class="p">)])&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">minor&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">det&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="p">((&lt;/span>&lt;span class="n">r&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="n">c&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">%&lt;/span> &lt;span class="mi">2&lt;/span> &lt;span class="o">?&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="mi">1&lt;/span> &lt;span class="o">:&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// transpose of the inverse matrix
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="c1">// (1) inverse matrix := 1 / det(M) * C^T (C: cofactor matrix)
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="c1">// (2) 1 / det(M) * C
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="c1">// Note. Laplace expansion
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="c1">// det(M) := sum of products of the entries in that row and their respective cofactors
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="na">[[nodiscard]]&lt;/span> &lt;span class="n">mat&lt;/span> &lt;span class="n">inverse_transpose&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="k">const&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">mat&lt;/span> &lt;span class="n">cof_mat&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">for&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="kt">int&lt;/span> &lt;span class="n">i&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">R&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="n">i&lt;/span>&lt;span class="o">--&lt;/span>&lt;span class="p">;)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">for&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="kt">int&lt;/span> &lt;span class="n">j&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">C&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="n">j&lt;/span>&lt;span class="o">--&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="n">cof_mat&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">j&lt;/span>&lt;span class="p">][&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">cofactor&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">j&lt;/span>&lt;span class="p">))&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">cof_mat&lt;/span> &lt;span class="o">/&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">col&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="n">cof_mat&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">]);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// inverse matrix
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="na">[[nodiscard]]&lt;/span> &lt;span class="n">mat&lt;/span> &lt;span class="n">inverse&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="k">const&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="k">return&lt;/span> &lt;span class="nf">inverse_transpose&lt;/span>&lt;span class="p">().&lt;/span>&lt;span class="n">transpose&lt;/span>&lt;span class="p">();&lt;/span> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// transpose matrix
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="na">[[nodiscard]]&lt;/span> &lt;span class="n">mat&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="n">C&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">R&lt;/span>&lt;span class="o">&amp;gt;&lt;/span> &lt;span class="n">transpose&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="k">const&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">mat&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="n">C&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">R&lt;/span>&lt;span class="o">&amp;gt;&lt;/span> &lt;span class="n">tp_mat&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">for&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="kt">int&lt;/span> &lt;span class="n">i&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">R&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="n">i&lt;/span>&lt;span class="o">--&lt;/span>&lt;span class="p">;)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">for&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="kt">int&lt;/span> &lt;span class="n">j&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">C&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="n">j&lt;/span>&lt;span class="o">--&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="n">tp_mat&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="p">][&lt;/span>&lt;span class="n">j&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">col&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">j&lt;/span>&lt;span class="p">][&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="p">])&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">tp_mat&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">};&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// addition
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="k">template&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="kt">int&lt;/span> &lt;span class="n">R&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="kt">int&lt;/span> &lt;span class="n">C&lt;/span>&lt;span class="o">&amp;gt;&lt;/span> &lt;span class="n">mat&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="n">R&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">C&lt;/span>&lt;span class="o">&amp;gt;&lt;/span> &lt;span class="k">operator&lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">mat&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="n">R&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">C&lt;/span>&lt;span class="o">&amp;gt;&lt;/span> &lt;span class="n">a&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="k">const&lt;/span> &lt;span class="n">mat&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="n">R&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">C&lt;/span>&lt;span class="o">&amp;gt;&amp;amp;&lt;/span> &lt;span class="n">b&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">for&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="kt">int&lt;/span> &lt;span class="n">j&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">C&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="n">j&lt;/span>&lt;span class="o">--&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="n">a&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">j&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">a&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">j&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="n">b&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">j&lt;/span>&lt;span class="p">])&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">a&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// subtraction
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="k">template&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="kt">int&lt;/span> &lt;span class="n">R&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="kt">int&lt;/span> &lt;span class="n">C&lt;/span>&lt;span class="o">&amp;gt;&lt;/span> &lt;span class="n">mat&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="n">R&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">C&lt;/span>&lt;span class="o">&amp;gt;&lt;/span> &lt;span class="k">operator&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">mat&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="n">R&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">C&lt;/span>&lt;span class="o">&amp;gt;&lt;/span> &lt;span class="n">a&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="k">const&lt;/span> &lt;span class="n">mat&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="n">R&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">C&lt;/span>&lt;span class="o">&amp;gt;&amp;amp;&lt;/span> &lt;span class="n">b&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">for&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="kt">int&lt;/span> &lt;span class="n">j&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">C&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="n">j&lt;/span>&lt;span class="o">--&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="n">a&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">j&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">a&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">j&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">-&lt;/span> &lt;span class="n">b&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">j&lt;/span>&lt;span class="p">])&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">a&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// multiplication: matrix x scalar
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="k">template&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="kt">int&lt;/span> &lt;span class="n">R&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="kt">int&lt;/span> &lt;span class="n">C&lt;/span>&lt;span class="o">&amp;gt;&lt;/span> &lt;span class="n">mat&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="n">R&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">C&lt;/span>&lt;span class="o">&amp;gt;&lt;/span> &lt;span class="k">operator&lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">mat&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="n">R&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">C&lt;/span>&lt;span class="o">&amp;gt;&lt;/span> &lt;span class="n">m&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="kt">double&lt;/span> &lt;span class="n">s&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">for&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="kt">int&lt;/span> &lt;span class="n">j&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">C&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="n">j&lt;/span>&lt;span class="o">--&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="n">m&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">j&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">m&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">j&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="n">s&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">m&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// multiplication: matrix x vector
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="k">template&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="kt">int&lt;/span> &lt;span class="n">R&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="kt">int&lt;/span> &lt;span class="n">C&lt;/span>&lt;span class="o">&amp;gt;&lt;/span> &lt;span class="n">vec&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="n">R&lt;/span>&lt;span class="o">&amp;gt;&lt;/span> &lt;span class="k">operator&lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="k">const&lt;/span> &lt;span class="n">mat&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="n">R&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">C&lt;/span>&lt;span class="o">&amp;gt;&amp;amp;&lt;/span> &lt;span class="n">m&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="k">const&lt;/span> &lt;span class="n">vec&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="n">C&lt;/span>&lt;span class="o">&amp;gt;&amp;amp;&lt;/span> &lt;span class="n">v&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">vec&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="n">R&lt;/span>&lt;span class="o">&amp;gt;&lt;/span> &lt;span class="n">col_vec&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">for&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="kt">int&lt;/span> &lt;span class="n">i&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">R&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="n">i&lt;/span>&lt;span class="o">--&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="n">col_vec&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">m&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">row&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="n">v&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">col_vec&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// multiplication: vector x matrix
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="k">template&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="kt">int&lt;/span> &lt;span class="n">R&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="kt">int&lt;/span> &lt;span class="n">C&lt;/span>&lt;span class="o">&amp;gt;&lt;/span> &lt;span class="n">vec&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="n">C&lt;/span>&lt;span class="o">&amp;gt;&lt;/span> &lt;span class="k">operator&lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="k">const&lt;/span> &lt;span class="n">vec&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="n">R&lt;/span>&lt;span class="o">&amp;gt;&amp;amp;&lt;/span> &lt;span class="n">v&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="k">const&lt;/span> &lt;span class="n">mat&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="n">R&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">C&lt;/span>&lt;span class="o">&amp;gt;&amp;amp;&lt;/span> &lt;span class="n">m&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">vec&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="n">C&lt;/span>&lt;span class="o">&amp;gt;&lt;/span> &lt;span class="n">row_vec&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">for&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="kt">int&lt;/span> &lt;span class="n">j&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">C&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="n">j&lt;/span>&lt;span class="o">--&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="n">row_vec&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">j&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">v&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="n">m&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">j&lt;/span>&lt;span class="p">])&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">row_vec&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// multiplication: matrix x matrix
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="k">template&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="kt">int&lt;/span> &lt;span class="n">R&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="kt">int&lt;/span> &lt;span class="n">K&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="kt">int&lt;/span> &lt;span class="n">C&lt;/span>&lt;span class="o">&amp;gt;&lt;/span> &lt;span class="n">mat&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="n">R&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">C&lt;/span>&lt;span class="o">&amp;gt;&lt;/span> &lt;span class="k">operator&lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="k">const&lt;/span> &lt;span class="n">mat&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="n">R&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">K&lt;/span>&lt;span class="o">&amp;gt;&amp;amp;&lt;/span> &lt;span class="n">a&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="k">const&lt;/span> &lt;span class="n">mat&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="n">K&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">C&lt;/span>&lt;span class="o">&amp;gt;&amp;amp;&lt;/span> &lt;span class="n">b&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">mat&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="n">R&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">C&lt;/span>&lt;span class="o">&amp;gt;&lt;/span> &lt;span class="n">m&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">for&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="kt">int&lt;/span> &lt;span class="n">j&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">C&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="n">j&lt;/span>&lt;span class="o">--&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="n">m&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">j&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">a&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="n">b&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">j&lt;/span>&lt;span class="p">])&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">m&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// division: matrix / scalar
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="k">template&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="kt">int&lt;/span> &lt;span class="n">R&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="kt">int&lt;/span> &lt;span class="n">C&lt;/span>&lt;span class="o">&amp;gt;&lt;/span> &lt;span class="n">mat&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="n">R&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">C&lt;/span>&lt;span class="o">&amp;gt;&lt;/span> &lt;span class="k">operator&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">mat&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="n">R&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">C&lt;/span>&lt;span class="o">&amp;gt;&lt;/span> &lt;span class="n">m&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="kt">double&lt;/span> &lt;span class="n">s&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">for&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="kt">int&lt;/span> &lt;span class="n">j&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">C&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="n">j&lt;/span>&lt;span class="o">--&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="n">m&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">j&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">m&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">j&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">/&lt;/span> &lt;span class="n">s&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">m&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// stream output (row-major)
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="k">template&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="kt">int&lt;/span> &lt;span class="n">R&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="kt">int&lt;/span> &lt;span class="n">C&lt;/span>&lt;span class="o">&amp;gt;&lt;/span> &lt;span class="n">std&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="n">ostream&lt;/span>&lt;span class="o">&amp;amp;&lt;/span> &lt;span class="k">operator&lt;/span>&lt;span class="o">&amp;lt;&amp;lt;&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">std&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="n">ostream&lt;/span>&lt;span class="o">&amp;amp;&lt;/span> &lt;span class="n">out&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="k">const&lt;/span> &lt;span class="n">mat&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="n">R&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">C&lt;/span>&lt;span class="o">&amp;gt;&amp;amp;&lt;/span> &lt;span class="n">m&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">for&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="kt">int&lt;/span> &lt;span class="n">i&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="n">i&lt;/span> &lt;span class="o">&amp;lt;&lt;/span> &lt;span class="n">R&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="o">++&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">out&lt;/span> &lt;span class="o">&amp;lt;&amp;lt;&lt;/span> &lt;span class="n">m&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">row&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">&amp;lt;&amp;lt;&lt;/span> &lt;span class="s">&amp;#34;&lt;/span>&lt;span class="se">\n&lt;/span>&lt;span class="s">&amp;#34;&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">out&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// expand -&amp;gt; cofactor -&amp;gt; det -&amp;gt; -&amp;gt; expand -&amp;gt; ...
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="k">template&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="kt">int&lt;/span> &lt;span class="n">N&lt;/span>&lt;span class="o">&amp;gt;&lt;/span> &lt;span class="k">struct&lt;/span> &lt;span class="nc">recursive_det&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">static&lt;/span> &lt;span class="kt">double&lt;/span> &lt;span class="nf">expand&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="k">const&lt;/span> &lt;span class="n">mat&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="n">N&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">N&lt;/span>&lt;span class="o">&amp;gt;&amp;amp;&lt;/span> &lt;span class="n">m&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kt">double&lt;/span> &lt;span class="n">sum&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">for&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="kt">int&lt;/span> &lt;span class="n">i&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">N&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="n">i&lt;/span>&lt;span class="o">--&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="n">sum&lt;/span> &lt;span class="o">+=&lt;/span> &lt;span class="n">m&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">][&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="n">m&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">cofactor&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">))&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">sum&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">};&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">template&lt;/span>&lt;span class="o">&amp;lt;&amp;gt;&lt;/span> &lt;span class="k">struct&lt;/span> &lt;span class="nc">recursive_det&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="o">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">static&lt;/span> &lt;span class="kt">double&lt;/span> &lt;span class="nf">expand&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="k">const&lt;/span> &lt;span class="n">mat&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="o">&amp;gt;&amp;amp;&lt;/span> &lt;span class="n">m&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="k">return&lt;/span> &lt;span class="n">m&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">][&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">];&lt;/span> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">};&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-8">
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Copy code"
+>
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4">&lt;/div>
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/details>
+&lt;/div>
+&lt;/details>
 &lt;h2>Custom Features&lt;span class="hx:absolute hx:-mt-20" id="custom-features">&lt;/span>
 &lt;a href="#custom-features" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
-&lt;li>&lt;input checked="" disabled="" type="checkbox"> Add PNG image output support by &lt;code>stb_image_write.h&lt;/code>.&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Add PNG image output support using &lt;code>stb_image_write.h&lt;/code>.&lt;/li>
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> Add &lt;code>byte_per_pixel()&lt;/code> (accessor function) to support generic color interpolation.&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Apply &lt;code>clang-format&lt;/code> based on &lt;strong>Blender&lt;/strong> style.&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Separate render modes (wireframe, Lerp, Z-buffer, etc.).&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Add &lt;code>Mesh&lt;/code> constructor overloading to support multi-mesh loading.&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Visualize volume rendering-like effect (triangle-level / pixel-level).&lt;/li>
 &lt;/ul>
 &lt;h2>Development Environment&lt;span class="hx:absolute hx:-mt-20" id="development-environment">&lt;/span>
 &lt;a href="#development-environment" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;h3>Hardware specifications&lt;span class="hx:absolute hx:-mt-20" id="hardware-specifications">&lt;/span>
@@ -561,7 +1076,7 @@ This is called &lt;a href="https://en.wikipedia.org/wiki/Linear_interpolation"ta
 &lt;/summary>
 &lt;div class="hx:p-2 hx:overflow-hidden">
 &lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
-&lt;div class="hextra-code-filename not-prose" dir="auto">HTML&lt;/div>&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-markdown" data-lang="markdown">&lt;span class="line">&lt;span class="cl">{{- $logoPath := .Site.Params.navbar.logo.path | default &amp;#34;images/logo.svg&amp;#34; -}}
+&lt;div class="hextra-code-filename not-prose" dir="auto">HTML&lt;/div>&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-html" data-lang="html">&lt;span class="line">&lt;span class="cl">{{- $logoPath := .Site.Params.navbar.logo.path | default &amp;#34;images/logo.svg&amp;#34; -}}
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{{- $logoLink := .Site.Params.navbar.logo.link | default .Site.Home.RelPermalink -}}
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{{- $logoWidth := .Site.Params.navbar.logo.width | default &amp;#34;20&amp;#34; -}}
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{{- $logoHeight := .Site.Params.navbar.logo.height | default &amp;#34;20&amp;#34; -}}
@@ -570,8 +1085,8 @@ This is called &lt;a href="https://en.wikipedia.org/wiki/Linear_interpolation"ta
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">a&lt;/span> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;hx:flex hx:items-center hx:hover:opacity-75 hx:ltr:mr-auto hx:rtl:ml-auto&amp;#34;&lt;/span> &lt;span class="na">href&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;{{ $logoLink }}&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {{- $displayTitle := (.Site.Params.navbar.displayTitle | default true) }}
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {{- if (.Site.Params.navbar.displayLogo | default true) }}
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">img&lt;/span> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;hx:mr-2 hx:block hx:dark:hidden&amp;#34;&lt;/span> &lt;span class="na">src&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;{{ $logoPath | relURL }}&amp;#34;&lt;/span> &lt;span class="na">alt&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;{{ cond $displayTitle &lt;/span>&lt;span class="sb">`Logo`&lt;/span>&lt;span class="s"> .Site.Title }}&amp;#34;&lt;/span> &lt;span class="na">height&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;{{ $logoHeight }}&amp;#34;&lt;/span> &lt;span class="na">width&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;{{ $logoWidth }}&amp;#34;&lt;/span> &lt;span class="p">/&amp;gt;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">img&lt;/span> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;hx:mr-2 hx:hidden hx:dark:block&amp;#34;&lt;/span> &lt;span class="na">src&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;{{ $logoDarkPath | relURL }}&amp;#34;&lt;/span> &lt;span class="na">alt&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;{{ cond $displayTitle &lt;/span>&lt;span class="sb">`Dark Logo`&lt;/span>&lt;span class="s"> .Site.Title }}&amp;#34;&lt;/span> &lt;span class="na">height&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;{{ $logoHeight }}&amp;#34;&lt;/span> &lt;span class="na">width&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;{{ $logoWidth }}&amp;#34;&lt;/span> &lt;span class="p">/&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">img&lt;/span> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;hx:mr-2 hx:block hx:dark:hidden&amp;#34;&lt;/span> &lt;span class="na">src&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;{{ $logoPath | relURL }}&amp;#34;&lt;/span> &lt;span class="na">alt&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;{{ cond $displayTitle `Logo` .Site.Title }}&amp;#34;&lt;/span> &lt;span class="na">height&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;{{ $logoHeight }}&amp;#34;&lt;/span> &lt;span class="na">width&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;{{ $logoWidth }}&amp;#34;&lt;/span> &lt;span class="p">/&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">img&lt;/span> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;hx:mr-2 hx:hidden hx:dark:block&amp;#34;&lt;/span> &lt;span class="na">src&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;{{ $logoDarkPath | relURL }}&amp;#34;&lt;/span> &lt;span class="na">alt&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;{{ cond $displayTitle `Dark Logo` .Site.Title }}&amp;#34;&lt;/span> &lt;span class="na">height&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;{{ $logoHeight }}&amp;#34;&lt;/span> &lt;span class="na">width&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;{{ $logoWidth }}&amp;#34;&lt;/span> &lt;span class="p">/&amp;gt;&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {{- end }}
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {{- if $displayTitle }}
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">span&lt;/span> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;hx:mr-2 hx:font-extrabold hx:inline hx:select-none&amp;#34;&lt;/span> &lt;span class="na">title&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;{{ .Site.Title }}&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>{{- .Site.Title -}}&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">span&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
@@ -592,15 +1107,15 @@ title="Copy code"
 &lt;h3>Title&lt;span class="hx:absolute hx:-mt-20" id="title">&lt;/span>
 &lt;a href="#title" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>To modify the default logo and title, edit &lt;code>hugo.yaml&lt;/code> and add the path to my logo file under &lt;code>static&lt;/code> directory.&lt;/p>
 &lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
-&lt;div class="hextra-code-filename not-prose" dir="auto">YAML&lt;/div>&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-markdown" data-lang="markdown">&lt;span class="line">&lt;span class="cl">params:
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> navbar:
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> displayTitle: true
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> displayLogo: true
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> logo:
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> path: logos/infinity_logo.png
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> dark: logos/infinity_logo_dark.png
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> width: 36
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> height: 36&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-8">
+&lt;div class="hextra-code-filename not-prose" dir="auto">YAML&lt;/div>&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">params&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">navbar&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">displayTitle&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kc">true&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">displayLogo&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kc">true&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">logo&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">path&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">logos/infinity_logo.png&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">dark&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">logos/infinity_logo_dark.png&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">width&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="m">36&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">height&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="m">36&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-8">
 &lt;button
 class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
 title="Copy code"
@@ -650,22 +1165,22 @@ title="Copy code"
 &lt;/figure>&lt;/p>
 &lt;p>After completing the minimum setup, link the repository and configure the four options. (Ref. &lt;a href="https://giscus.app"target="_blank" rel="noopener">giscus&lt;/a>) My settings are listed below.&lt;/p>
 &lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
-&lt;div class="hextra-code-filename not-prose" dir="auto">YAML&lt;/div>&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-markdown" data-lang="markdown">&lt;span class="line">&lt;span class="cl">params:
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> comments:
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> enable: true
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> type: giscus
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> giscus:
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> repo: [...]
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> repoId: [...]
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> category: [...]
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> categoryId: [...]
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> mapping: pathname
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> strict: 1
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> reactionsEnabled: 1
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> emitMetadata: 0
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> inputPosition: bottom
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> theme: transparent_dark
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> lang: en&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-8">
+&lt;div class="hextra-code-filename not-prose" dir="auto">YAML&lt;/div>&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">params&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">comments&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">enable&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kc">true&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">type&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">giscus&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">giscus&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">repo&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="l">...]&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">repoId&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="l">...]&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">category&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="l">...]&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">categoryId&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="l">...]&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">mapping&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">pathname&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">strict&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="m">1&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">reactionsEnabled&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="m">1&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">emitMetadata&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="m">0&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">inputPosition&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">bottom&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">theme&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">transparent_dark&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">lang&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">en&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-8">
 &lt;button
 class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
 title="Copy code"
@@ -687,7 +1202,7 @@ title="Copy code"
 &lt;/summary>
 &lt;div class="hx:p-2 hx:overflow-hidden">
 &lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
-&lt;div class="hextra-code-filename not-prose" dir="auto">HTML&lt;/div>&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-markdown" data-lang="markdown">&lt;span class="line">&lt;span class="cl">function getGiscusTheme() {
+&lt;div class="hextra-code-filename not-prose" dir="auto">HTML&lt;/div>&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-html" data-lang="html">&lt;span class="line">&lt;span class="cl">function getGiscusTheme() {
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> const giscusTheme = &amp;#39;{{ .theme }}&amp;#39;;
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> if (giscusTheme === &amp;#39;light&amp;#39; || giscusTheme === &amp;#39;dark&amp;#39;) {
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> return giscusTheme;
@@ -745,10 +1260,10 @@ title="Copy code"
 &lt;a href="#%ec%bb%a4%ec%8a%a4%ed%84%b0%eb%a7%88%ec%9d%b4%ec%a7%95-%eb%aa%a9%ed%91%9c" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>&lt;code>{root}/scripts/baekjoon/parsing.js&lt;/code> 파일에서 &lt;code>makeDetailMessageAndReadme&lt;/code> 함수 내용 수정이 주 목적이다.&lt;/p>
 &lt;h3>폴더 경로 및 파일 이름&lt;span class="hx:absolute hx:-mt-20" id="폴더-경로-및-파일-이름">&lt;/span>
 &lt;a href="#%ed%8f%b4%eb%8d%94-%ea%b2%bd%eb%a1%9c-%eb%b0%8f-%ed%8c%8c%ec%9d%bc-%ec%9d%b4%eb%a6%84" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
-&lt;div class="hextra-code-filename not-prose" dir="auto">parsing.js&lt;/div>&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-markdown" data-lang="markdown">&lt;span class="line">&lt;span class="cl">const directory = await getDirNameByOrgOption(
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="sb">`백준/${level.replace(/ .*/, &amp;#39;&amp;#39;)}/${problemId}. ${convertSingleCharToDoubleChar(title)}`&lt;/span>,
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> langVersionRemove(language, null)
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">);&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-8">
+&lt;div class="hextra-code-filename not-prose" dir="auto">parsing.js&lt;/div>&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-js" data-lang="js">&lt;span class="line">&lt;span class="cl">&lt;span class="kr">const&lt;/span> &lt;span class="nx">directory&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="kr">await&lt;/span> &lt;span class="nx">getDirNameByOrgOption&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="sb">`백준/&lt;/span>&lt;span class="si">${&lt;/span>&lt;span class="nx">level&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">replace&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="sr">/ .*/&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="sb">/&lt;/span>&lt;span class="si">${&lt;/span>&lt;span class="nx">problemId&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="sb">. &lt;/span>&lt;span class="si">${&lt;/span>&lt;span class="nx">convertSingleCharToDoubleChar&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">title&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="sb">`&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">langVersionRemove&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">language&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="kc">null&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">);&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-8">
 &lt;button
 class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
 title="Copy code"
@@ -759,7 +1274,7 @@ title="Copy code"
 &lt;/div>
 &lt;/div>
 &lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
-&lt;div class="hextra-code-filename not-prose" dir="auto">parsing.js&lt;/div>&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-markdown" data-lang="markdown">&lt;span class="line">&lt;span class="cl">const fileName = &lt;span class="sb">`${convertSingleCharToDoubleChar(title)}.${languages[language]}`&lt;/span>;&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-8">
+&lt;div class="hextra-code-filename not-prose" dir="auto">parsing.js&lt;/div>&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-js" data-lang="js">&lt;span class="line">&lt;span class="cl">&lt;span class="kr">const&lt;/span> &lt;span class="nx">fileName&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="sb">`&lt;/span>&lt;span class="si">${&lt;/span>&lt;span class="nx">convertSingleCharToDoubleChar&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">title&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="sb">.&lt;/span>&lt;span class="si">${&lt;/span>&lt;span class="nx">languages&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nx">language&lt;/span>&lt;span class="p">]&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="sb">`&lt;/span>&lt;span class="p">;&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-8">
 &lt;button
 class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
 title="Copy code"
@@ -773,10 +1288,10 @@ title="Copy code"
 &lt;br>
 &lt;h3>커밋 메시지&lt;span class="hx:absolute hx:-mt-20" id="커밋-메시지">&lt;/span>
 &lt;a href="#%ec%bb%a4%eb%b0%8b-%eb%a9%94%ec%8b%9c%ec%a7%80" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
-&lt;div class="hextra-code-filename not-prose" dir="auto">parsing.js&lt;/div>&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-markdown" data-lang="markdown">&lt;span class="line">&lt;span class="cl">const message = &lt;span class="sb">`[${level}] Title: ${title}, Time: ${runtime} ms, Memory: ${memory} KB`&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> + ((isNaN(score)) ? &amp;#39; &amp;#39; : &lt;span class="sb">`, Score: ${score} point `&lt;/span>) // 서브 태스크가 있는 문제로, 점수가 있는 경우 점수까지 커밋 메시지에 표기
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> + &lt;span class="sb">`-BaekjoonHub`&lt;/span>;
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">);&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-8">
+&lt;div class="hextra-code-filename not-prose" dir="auto">parsing.js&lt;/div>&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-js" data-lang="js">&lt;span class="line">&lt;span class="cl">&lt;span class="kr">const&lt;/span> &lt;span class="nx">message&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="sb">`[&lt;/span>&lt;span class="si">${&lt;/span>&lt;span class="nx">level&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="sb">] Title: &lt;/span>&lt;span class="si">${&lt;/span>&lt;span class="nx">title&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="sb">, Time: &lt;/span>&lt;span class="si">${&lt;/span>&lt;span class="nx">runtime&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="sb"> ms, Memory: &lt;/span>&lt;span class="si">${&lt;/span>&lt;span class="nx">memory&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="sb"> KB`&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">+&lt;/span> &lt;span class="p">((&lt;/span>&lt;span class="nb">isNaN&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">score&lt;/span>&lt;span class="p">))&lt;/span> &lt;span class="o">?&lt;/span> &lt;span class="s1">&amp;#39; &amp;#39;&lt;/span> &lt;span class="o">:&lt;/span> &lt;span class="sb">`, Score: &lt;/span>&lt;span class="si">${&lt;/span>&lt;span class="nx">score&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="sb"> point `&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="c1">// 서브 태스크가 있는 문제로, 점수가 있는 경우 점수까지 커밋 메시지에 표기
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="sb">`-BaekjoonHub`&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">);&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-8">
 &lt;button
 class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
 title="Copy code"
@@ -790,20 +1305,21 @@ title="Copy code"
 &lt;br>
 &lt;h3>NO README&lt;span class="hx:absolute hx:-mt-20" id="no-readme">&lt;/span>
 &lt;a href="#no-readme" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
-&lt;div class="hextra-code-filename not-prose" dir="auto">parsing.js&lt;/div>&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-markdown" data-lang="markdown">&lt;span class="line">&lt;span class="cl">// prettier-ignore-start
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">const readme = &lt;span class="sb">`# [${level}] ${title} - ${problemId} \n\n`&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> + &lt;span class="sb">`[문제 링크](https://www.acmicpc.net/problem/${problemId}) \n\n`&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> + &lt;span class="sb">`### 성능 요약\n\n`&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> + &lt;span class="sb">`메모리: ${memory} KB, `&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> + &lt;span class="sb">`시간: ${runtime} ms\n\n`&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> + &lt;span class="sb">`### 분류\n\n`&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> + &lt;span class="sb">`${category || &amp;#34;Empty&amp;#34;}\n\n`&lt;/span> + (!!problem_description ? &amp;#39;&amp;#39;
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> + &lt;span class="sb">`### 제출 일자\n\n`&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> + &lt;span class="sb">`${dateInfo}\n\n`&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> + &lt;span class="sb">`### 문제 설명\n\n${problem_description}\n\n`&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> + &lt;span class="sb">`### 입력 \n\n ${problem_input}\n\n`&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> + &lt;span class="sb">`### 출력 \n\n ${problem_output}\n\n`&lt;/span> : &amp;#39;&amp;#39;);
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">// prettier-ignore-end&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-8">
+&lt;div class="hextra-code-filename not-prose" dir="auto">parsing.js&lt;/div>&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-js" data-lang="js">&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// prettier-ignore-start
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="kr">const&lt;/span> &lt;span class="nx">readme&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="sb">`# [&lt;/span>&lt;span class="si">${&lt;/span>&lt;span class="nx">level&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="sb">] &lt;/span>&lt;span class="si">${&lt;/span>&lt;span class="nx">title&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="sb"> - &lt;/span>&lt;span class="si">${&lt;/span>&lt;span class="nx">problemId&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="sb"> \n\n`&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">+&lt;/span> &lt;span class="sb">`[문제 링크](https://www.acmicpc.net/problem/&lt;/span>&lt;span class="si">${&lt;/span>&lt;span class="nx">problemId&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="sb">) \n\n`&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">+&lt;/span> &lt;span class="sb">`### 성능 요약\n\n`&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">+&lt;/span> &lt;span class="sb">`메모리: &lt;/span>&lt;span class="si">${&lt;/span>&lt;span class="nx">memory&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="sb"> KB, `&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">+&lt;/span> &lt;span class="sb">`시간: &lt;/span>&lt;span class="si">${&lt;/span>&lt;span class="nx">runtime&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="sb"> ms\n\n`&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">+&lt;/span> &lt;span class="sb">`### 분류\n\n`&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">+&lt;/span> &lt;span class="sb">`&lt;/span>&lt;span class="si">${&lt;/span>&lt;span class="nx">category&lt;/span> &lt;span class="o">||&lt;/span> &lt;span class="s2">&amp;#34;Empty&amp;#34;&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="sb">\n\n`&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="o">!!&lt;/span>&lt;span class="nx">problem_description&lt;/span> &lt;span class="o">?&lt;/span> &lt;span class="s1">&amp;#39;&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">+&lt;/span> &lt;span class="sb">`### 제출 일자\n\n`&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">+&lt;/span> &lt;span class="sb">`&lt;/span>&lt;span class="si">${&lt;/span>&lt;span class="nx">dateInfo&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="sb">\n\n`&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">+&lt;/span> &lt;span class="sb">`### 문제 설명\n\n&lt;/span>&lt;span class="si">${&lt;/span>&lt;span class="nx">problem_description&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="sb">\n\n`&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">+&lt;/span> &lt;span class="sb">`### 입력 \n\n &lt;/span>&lt;span class="si">${&lt;/span>&lt;span class="nx">problem_input&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="sb">\n\n`&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">+&lt;/span> &lt;span class="sb">`### 출력 \n\n &lt;/span>&lt;span class="si">${&lt;/span>&lt;span class="nx">problem_output&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="sb">\n\n`&lt;/span> &lt;span class="o">:&lt;/span> &lt;span class="s1">&amp;#39;&amp;#39;&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// prettier-ignore-end
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-8">
 &lt;button
 class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
 title="Copy code"
@@ -817,33 +1333,33 @@ title="Copy code"
 &lt;h2>업로드 로직 수정&lt;span class="hx:absolute hx:-mt-20" id="업로드-로직-수정">&lt;/span>
 &lt;a href="#%ec%97%85%eb%a1%9c%eb%93%9c-%eb%a1%9c%ec%a7%81-%ec%88%98%ec%a0%95" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;h3>① parsing.js&lt;span class="hx:absolute hx:-mt-20" id="-parsingjs">&lt;/span>
 &lt;a href="#-parsingjs" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
-&lt;div class="hextra-code-filename not-prose" dir="auto">parsing.js&lt;/div>&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-markdown" data-lang="markdown">&lt;span class="line">&lt;span class="cl">async function makeDetailMessageAndReadme(data) {
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> const { problemId, result, title, level, code, language, memory, runtime } = data;
+&lt;div class="hextra-code-filename not-prose" dir="auto">parsing.js&lt;/div>&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-js" data-lang="js">&lt;span class="line">&lt;span class="cl">&lt;span class="kr">async&lt;/span> &lt;span class="kd">function&lt;/span> &lt;span class="nx">makeDetailMessageAndReadme&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">data&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kr">const&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="nx">problemId&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">result&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">title&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">level&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">code&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">language&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">memory&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">runtime&lt;/span> &lt;span class="p">}&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">data&lt;/span>&lt;span class="p">;&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> // 1. 폴더 경로 및 파일 이름
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> const noBlankLanguage = language.replace(/\s/g, &amp;#39;_&amp;#39;);
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> const noBlankLevel = level.replace(/\s/g, &amp;#39;_&amp;#39;);
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> const directory = &lt;span class="sb">`algorithm/Baekjoon/${noBlankLanguage}/${noBlankLevel}`&lt;/span>;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// 1. 폴더 경로 및 파일 이름
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="kr">const&lt;/span> &lt;span class="nx">noBlankLanguage&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">language&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">replace&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="sr">/\s/g&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;_&amp;#39;&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kr">const&lt;/span> &lt;span class="nx">noBlankLevel&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">level&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">replace&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="sr">/\s/g&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;_&amp;#39;&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kr">const&lt;/span> &lt;span class="nx">directory&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="sb">`algorithm/Baekjoon/&lt;/span>&lt;span class="si">${&lt;/span>&lt;span class="nx">noBlankLanguage&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="sb">/&lt;/span>&lt;span class="si">${&lt;/span>&lt;span class="nx">noBlankLevel&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="sb">`&lt;/span>&lt;span class="p">;&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> const extension = languages[language];
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> const fileName = &lt;span class="sb">`${problemId}.${extension}`&lt;/span>;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kr">const&lt;/span> &lt;span class="nx">extension&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">languages&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nx">language&lt;/span>&lt;span class="p">];&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kr">const&lt;/span> &lt;span class="nx">fileName&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="sb">`&lt;/span>&lt;span class="si">${&lt;/span>&lt;span class="nx">problemId&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="sb">.&lt;/span>&lt;span class="si">${&lt;/span>&lt;span class="nx">extension&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="sb">`&lt;/span>&lt;span class="p">;&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> // 2. 커밋 메시지
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> const score = parseNumberFromString(result);
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> const message = &lt;span class="sb">`&amp;#34;${title}&amp;#34; (Memory: ${memory} KB, Time: ${runtime} ms`&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> + ((isNaN(score)) ? &amp;#39;)&amp;#39; : &lt;span class="sb">`, Score: ${score})`&lt;/span>);
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// 2. 커밋 메시지
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="kr">const&lt;/span> &lt;span class="nx">score&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">parseNumberFromString&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">result&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kr">const&lt;/span> &lt;span class="nx">message&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="sb">`&amp;#34;&lt;/span>&lt;span class="si">${&lt;/span>&lt;span class="nx">title&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="sb">&amp;#34; (Memory: &lt;/span>&lt;span class="si">${&lt;/span>&lt;span class="nx">memory&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="sb"> KB, Time: &lt;/span>&lt;span class="si">${&lt;/span>&lt;span class="nx">runtime&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="sb"> ms`&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">+&lt;/span> &lt;span class="p">((&lt;/span>&lt;span class="nb">isNaN&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">score&lt;/span>&lt;span class="p">))&lt;/span> &lt;span class="o">?&lt;/span> &lt;span class="s1">&amp;#39;)&amp;#39;&lt;/span> &lt;span class="o">:&lt;/span> &lt;span class="sb">`, Score: &lt;/span>&lt;span class="si">${&lt;/span>&lt;span class="nx">score&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="sb">)`&lt;/span>&lt;span class="p">);&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> // 3. README
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> const readme = null;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// 3. README
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="kr">const&lt;/span> &lt;span class="nx">readme&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="kc">null&lt;/span>&lt;span class="p">;&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> return {
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> directory,
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> fileName,
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> message,
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> readme,
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> code
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> };
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">}&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-8">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">directory&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">fileName&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">message&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">readme&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">code&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">};&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-8">
 &lt;button
 class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
 title="Copy code"
@@ -857,38 +1373,38 @@ title="Copy code"
 &lt;br>
 &lt;h3>② uploadfunctions.js&lt;span class="hx:absolute hx:-mt-20" id="-uploadfunctionsjs">&lt;/span>
 &lt;a href="#-uploadfunctionsjs" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
-&lt;div class="hextra-code-filename not-prose" dir="auto">uploadfunctions.js&lt;/div>&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-markdown" data-lang="markdown">&lt;span class="line">&lt;span class="cl">async function upload(token, hook, sourceText, readmeText, directory, filename, commitMessage, cb) {
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> /* 업로드 후 커밋 */
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> const git = new GitHub(hook, token);
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> const stats = await getStats();
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> let default_branch = stats.branches[hook];
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> if (isNull(default_branch)) {
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> default_branch = await git.getDefaultBranchOnRepo();
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> stats.branches[hook] = default_branch;
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> }
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> const { refSHA, ref } = await git.getReference(default_branch);
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> const source = await git.createBlob(sourceText, &lt;span class="sb">`${directory}/${filename}`&lt;/span>); // 소스코드 파일
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> const treeItems = [source];
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> let readme = null;
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> if (!isNull(readmeText)) {
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> readme = await git.createBlob(readmeText, &lt;span class="sb">`${directory}/README.md`&lt;/span>); // readme 파일
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> treeItems.push(readme);
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> }
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> const treeSHA = await git.createTree(refSHA, treeItems);
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> const commitSHA = await git.createCommit(commitMessage, treeSHA, refSHA);
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> await git.updateHead(ref, commitSHA);
+&lt;div class="hextra-code-filename not-prose" dir="auto">uploadfunctions.js&lt;/div>&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-js" data-lang="js">&lt;span class="line">&lt;span class="cl">&lt;span class="kr">async&lt;/span> &lt;span class="kd">function&lt;/span> &lt;span class="nx">upload&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">token&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">hook&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">sourceText&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">readmeText&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">directory&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">filename&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">commitMessage&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">cb&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="cm">/* 업로드 후 커밋 */&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kr">const&lt;/span> &lt;span class="nx">git&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="k">new&lt;/span> &lt;span class="nx">GitHub&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">hook&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">token&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kr">const&lt;/span> &lt;span class="nx">stats&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="kr">await&lt;/span> &lt;span class="nx">getStats&lt;/span>&lt;span class="p">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kd">let&lt;/span> &lt;span class="nx">default_branch&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">stats&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">branches&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nx">hook&lt;/span>&lt;span class="p">];&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nx">isNull&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">default_branch&lt;/span>&lt;span class="p">))&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">default_branch&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="kr">await&lt;/span> &lt;span class="nx">git&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">getDefaultBranchOnRepo&lt;/span>&lt;span class="p">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">stats&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">branches&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nx">hook&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">default_branch&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kr">const&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="nx">refSHA&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">ref&lt;/span> &lt;span class="p">}&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="kr">await&lt;/span> &lt;span class="nx">git&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">getReference&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">default_branch&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kr">const&lt;/span> &lt;span class="nx">source&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="kr">await&lt;/span> &lt;span class="nx">git&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">createBlob&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">sourceText&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="sb">`&lt;/span>&lt;span class="si">${&lt;/span>&lt;span class="nx">directory&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="sb">/&lt;/span>&lt;span class="si">${&lt;/span>&lt;span class="nx">filename&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="sb">`&lt;/span>&lt;span class="p">);&lt;/span> &lt;span class="c1">// 소스코드 파일
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="kr">const&lt;/span> &lt;span class="nx">treeItems&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="nx">source&lt;/span>&lt;span class="p">];&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kd">let&lt;/span> &lt;span class="nx">readme&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="kc">null&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="o">!&lt;/span>&lt;span class="nx">isNull&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">readmeText&lt;/span>&lt;span class="p">))&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">readme&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="kr">await&lt;/span> &lt;span class="nx">git&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">createBlob&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">readmeText&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="sb">`&lt;/span>&lt;span class="si">${&lt;/span>&lt;span class="nx">directory&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="sb">/README.md`&lt;/span>&lt;span class="p">);&lt;/span> &lt;span class="c1">// readme 파일
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="nx">treeItems&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">push&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">readme&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kr">const&lt;/span> &lt;span class="nx">treeSHA&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="kr">await&lt;/span> &lt;span class="nx">git&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">createTree&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">refSHA&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">treeItems&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kr">const&lt;/span> &lt;span class="nx">commitSHA&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="kr">await&lt;/span> &lt;span class="nx">git&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">createCommit&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">commitMessage&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">treeSHA&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">refSHA&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kr">await&lt;/span> &lt;span class="nx">git&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">updateHead&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">ref&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">commitSHA&lt;/span>&lt;span class="p">);&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> /* stats의 값을 갱신합니다. */
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> updateObjectDatafromPath(stats.submission, &lt;span class="sb">`${hook}/${source.path}`&lt;/span>, source.sha);
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> if (readme !== null) {
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> updateObjectDatafromPath(stats.submission, &lt;span class="sb">`${hook}/${readme.path}`&lt;/span>, readme.sha);
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> }
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> await saveStats(stats);
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> // 콜백 함수 실행
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> if (typeof cb === &amp;#39;function&amp;#39;) {
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> cb(stats.branches, directory);
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> }
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">}&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-8">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="cm">/* stats의 값을 갱신합니다. */&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">updateObjectDatafromPath&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">stats&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">submission&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="sb">`&lt;/span>&lt;span class="si">${&lt;/span>&lt;span class="nx">hook&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="sb">/&lt;/span>&lt;span class="si">${&lt;/span>&lt;span class="nx">source&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">path&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="sb">`&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">source&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">sha&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nx">readme&lt;/span> &lt;span class="o">!==&lt;/span> &lt;span class="kc">null&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">updateObjectDatafromPath&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">stats&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">submission&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="sb">`&lt;/span>&lt;span class="si">${&lt;/span>&lt;span class="nx">hook&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="sb">/&lt;/span>&lt;span class="si">${&lt;/span>&lt;span class="nx">readme&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">path&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="sb">`&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">readme&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">sha&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kr">await&lt;/span> &lt;span class="nx">saveStats&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">stats&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// 콜백 함수 실행
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="k">typeof&lt;/span> &lt;span class="nx">cb&lt;/span> &lt;span class="o">===&lt;/span> &lt;span class="s1">&amp;#39;function&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">cb&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">stats&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">branches&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">directory&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-8">
 &lt;button
 class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
 title="Copy code"
@@ -902,34 +1418,34 @@ title="Copy code"
 &lt;br>
 &lt;h3>③ baekjoon.js&lt;span class="hx:absolute hx:-mt-20" id="-baekjoonjs">&lt;/span>
 &lt;a href="#-baekjoonjs" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
-&lt;div class="hextra-code-filename not-prose" dir="auto">baekjoon.js&lt;/div>&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-markdown" data-lang="markdown">&lt;span class="line">&lt;span class="cl">async function beginUpload(bojData) {
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> bojData = preProcessEmptyObj(bojData);
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> log(&amp;#39;bojData&amp;#39;, bojData);
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> if (bojData &lt;span class="err">&amp;amp;&amp;amp;&lt;/span> bojData.code) {
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> console.log(&amp;#39;Enter the &amp;#34;if statement&amp;#34; of beginUpload function.&amp;#39;);
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> const stats = await getStats();
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> const hook = await getHook();
+&lt;div class="hextra-code-filename not-prose" dir="auto">baekjoon.js&lt;/div>&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-js" data-lang="js">&lt;span class="line">&lt;span class="cl">&lt;span class="kr">async&lt;/span> &lt;span class="kd">function&lt;/span> &lt;span class="nx">beginUpload&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">bojData&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">bojData&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">preProcessEmptyObj&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">bojData&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">log&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;bojData&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">bojData&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nx">bojData&lt;/span> &lt;span class="o">&amp;amp;&amp;amp;&lt;/span> &lt;span class="nx">bojData&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">code&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">console&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">log&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;Enter the &amp;#34;if statement&amp;#34; of beginUpload function.&amp;#39;&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kr">const&lt;/span> &lt;span class="nx">stats&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="kr">await&lt;/span> &lt;span class="nx">getStats&lt;/span>&lt;span class="p">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kr">const&lt;/span> &lt;span class="nx">hook&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="kr">await&lt;/span> &lt;span class="nx">getHook&lt;/span>&lt;span class="p">();&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> const currentVersion = stats.version;
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> /* 버전 차이가 발생하거나, 해당 hook에 대한 데이터가 없는 경우 localstorage의 Stats 값을 업데이트하고, version을 최신으로 변경한다 */
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> if (isNull(currentVersion) || currentVersion !== getVersion() || isNull(await getStatsSHAfromPath(hook))) {
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> await versionUpdate();
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> }
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kr">const&lt;/span> &lt;span class="nx">currentVersion&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">stats&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">version&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="cm">/* 버전 차이가 발생하거나, 해당 hook에 대한 데이터가 없는 경우 localstorage의 Stats 값을 업데이트하고, version을 최신으로 변경한다 */&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nx">isNull&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">currentVersion&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">||&lt;/span> &lt;span class="nx">currentVersion&lt;/span> &lt;span class="o">!==&lt;/span> &lt;span class="nx">getVersion&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="o">||&lt;/span> &lt;span class="nx">isNull&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="kr">await&lt;/span> &lt;span class="nx">getStatsSHAfromPath&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">hook&lt;/span>&lt;span class="p">)))&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kr">await&lt;/span> &lt;span class="nx">versionUpdate&lt;/span>&lt;span class="p">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> /* 현재 제출하려는 소스코드가 기존 업로드한 내용과 같다면 중지 */
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> cachedSHA = await getStatsSHAfromPath(&lt;span class="sb">`${hook}/${bojData.directory}/${bojData.fileName}`&lt;/span>)
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> calcSHA = calculateBlobSHA(bojData.code)
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> log(&amp;#39;cachedSHA&amp;#39;, cachedSHA, &amp;#39;calcSHA&amp;#39;, calcSHA)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="cm">/* 현재 제출하려는 소스코드가 기존 업로드한 내용과 같다면 중지 */&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">cachedSHA&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="kr">await&lt;/span> &lt;span class="nx">getStatsSHAfromPath&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="sb">`&lt;/span>&lt;span class="si">${&lt;/span>&lt;span class="nx">hook&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="sb">/&lt;/span>&lt;span class="si">${&lt;/span>&lt;span class="nx">bojData&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">directory&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="sb">/&lt;/span>&lt;span class="si">${&lt;/span>&lt;span class="nx">bojData&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">fileName&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="sb">`&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">calcSHA&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">calculateBlobSHA&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">bojData&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">code&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">log&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;cachedSHA&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">cachedSHA&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;calcSHA&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">calcSHA&lt;/span>&lt;span class="p">)&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> if (cachedSHA == calcSHA) {
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> markUploadedCSS(stats.branches, bojData.directory);
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> console.log(&lt;span class="sb">`현재 제출번호를 업로드한 기록이 있습니다.`&lt;/span> /* submissionID ${bojData.submissionId}` */);
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> return;
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> }
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> /* 신규 제출 번호라면 새롭게 커밋 */
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> await uploadOneSolveProblemOnGit(bojData, markUploadedCSS);
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> }
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">}&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-8">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nx">cachedSHA&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="nx">calcSHA&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">markUploadedCSS&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">stats&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">branches&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">bojData&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">directory&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">console&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">log&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="sb">`현재 제출번호를 업로드한 기록이 있습니다.`&lt;/span> &lt;span class="cm">/* submissionID ${bojData.submissionId}` */&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="cm">/* 신규 제출 번호라면 새롭게 커밋 */&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kr">await&lt;/span> &lt;span class="nx">uploadOneSolveProblemOnGit&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">bojData&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">markUploadedCSS&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-8">
 &lt;button
 class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
 title="Copy code"
@@ -1082,7 +1598,7 @@ Deployment is now fully &lt;u>automated&lt;/u> for seamless updates.&lt;/p>
     extensions are acceptable).&lt;/p>
 &lt;h4>② Generate an SSH key (in the project root directory)&lt;span class="hx:absolute hx:-mt-20" id="-generate-an-ssh-key-in-the-project-root-directory">&lt;/span>
 &lt;a href="#-generate-an-ssh-key-in-the-project-root-directory" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
-&lt;div class="hextra-code-filename not-prose" dir="auto">Bash&lt;/div>&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-markdown" data-lang="markdown">&lt;span class="line">&lt;span class="cl">ssh-keygen -t ed25519 -C &amp;#34;hugo-deploy-key&amp;#34; -f hugo_deploy_key&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-8">
+&lt;div class="hextra-code-filename not-prose" dir="auto">Bash&lt;/div>&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">ssh-keygen -t ed25519 -C &lt;span class="s2">&amp;#34;hugo-deploy-key&amp;#34;&lt;/span> -f hugo_deploy_key&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-8">
 &lt;button
 class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
 title="Copy code"
