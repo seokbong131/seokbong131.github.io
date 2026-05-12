@@ -448,8 +448,8 @@ M347 1759 V0 H263 V1759 v0 v1759 h84z"/>&lt;/svg>&lt;/span>&lt;/span>&lt;/span>&
 &lt;/div>
 &lt;/div>
 &lt;p>&lt;figure>
-&lt;img src="../L_5_central_projection_1.png" title="Diablo - central projection (Z-buffer)" alt="" loading="lazy" />
-&lt;figcaption>Diablo - central projection (Z-buffer)&lt;/figcaption>
+&lt;img src="../L_5_central_projection_1.png" title="Diablo - central projection (Z-buffer) → ⚠️NO bug⚠️" alt="" loading="lazy" />
+&lt;figcaption>Diablo - central projection (Z-buffer) → ⚠️NO bug⚠️&lt;/figcaption>
 &lt;/figure>&lt;/p>
 &lt;p>&lt;figure>
 &lt;img src="../L_5_central_projection_2.png" title="Diablo - central projection (Framebuffer)" alt="" loading="lazy" />
@@ -732,7 +732,7 @@ In contrast, in wireframe models, the thickness of wireframe effect is proportio
 &lt;/details>
 &lt;details class="hx:last-of-type:mb-0 hx:rounded-lg hx:bg-neutral-50 hx:dark:bg-neutral-800 hx:p-2 hx:mt-4 hx:group" >
 &lt;summary class="hx:flex hx:items-center hx:cursor-pointer hx:select-none hx:list-none hx:p-1 hx:rounded-sm hx:transition-colors hx:hover:bg-gray-100 hx:dark:hover:bg-neutral-800 hx:before:mr-1 hx:before:inline-block hx:before:transition-transform hx:before:content-[''] hx:dark:before:invert hx:rtl:before:rotate-180 hx:group-open:before:rotate-90">
-&lt;strong class="hx:text-lg">Graphics mathematics&lt;/strong>
+&lt;strong class="hx:text-lg">Hidden faces removal (graphics mathematics)&lt;/strong>
 &lt;/summary>
 &lt;div class="hx:p-2 hx:overflow-hidden">
 &lt;p>Graphics mathematics templates are based on three design choices:&lt;/p>
@@ -1042,6 +1042,61 @@ title="Copy code"
 &lt;/div>
 &lt;/div>
 &lt;/details>
+&lt;/div>
+&lt;/details>
+&lt;details class="hx:last-of-type:mb-0 hx:rounded-lg hx:bg-neutral-50 hx:dark:bg-neutral-800 hx:p-2 hx:mt-4 hx:group" >
+&lt;summary class="hx:flex hx:items-center hx:cursor-pointer hx:select-none hx:list-none hx:p-1 hx:rounded-sm hx:transition-colors hx:hover:bg-gray-100 hx:dark:hover:bg-neutral-800 hx:before:mr-1 hx:before:inline-block hx:before:transition-transform hx:before:content-[''] hx:dark:before:invert hx:rtl:before:rotate-180 hx:group-open:before:rotate-90">
+&lt;strong class="hx:text-lg">Naive camera handling (find the bug)&lt;/strong>
+&lt;/summary>
+&lt;div class="hx:p-2 hx:overflow-hidden">
+&lt;p>&lt;figure>
+&lt;img src="../HW_5_find_the_bug_1.png" title="Diablo - floating-point Z-buffer" alt="" loading="lazy" />
+&lt;figcaption>Diablo - floating-point Z-buffer&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>&lt;figure>
+&lt;img src="../HW_5_find_the_bug_2.png" title="Diablo - wireframe" alt="" loading="lazy" />
+&lt;figcaption>Diablo - wireframe&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>&lt;figure>
+&lt;img src="../HW_5_find_the_bug_3.png" title="Diablo - random solid color" alt="" loading="lazy" />
+&lt;figcaption>Diablo - random solid color&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>&lt;figure>
+&lt;img src="../HW_5_find_the_bug_4.png" title="Diablo - Lerp" alt="" loading="lazy" />
+&lt;figcaption>Diablo - Lerp&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>&lt;figure>
+&lt;img src="../HW_5_find_the_bug_5.png" title="Boggie (full) - floating-point Z-buffer" alt="" loading="lazy" />
+&lt;figcaption>Boggie (full) - floating-point Z-buffer&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>&lt;figure>
+&lt;img src="../HW_5_find_the_bug_6.png" title="Boggie (full) - wireframe" alt="" loading="lazy" />
+&lt;figcaption>Boggie (full) - wireframe&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>&lt;figure>
+&lt;img src="../HW_5_find_the_bug_7.png" title="Boggie (full) - random solid color" alt="" loading="lazy" />
+&lt;figcaption>Boggie (full) - random solid color&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>&lt;figure>
+&lt;img src="../HW_5_find_the_bug_8.png" title="Boggie (full) - Lerp" alt="" loading="lazy" />
+&lt;figcaption>Boggie (full) - Lerp&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>&lt;figure>
+&lt;img src="../HW_5_find_the_bug_9.png" title="African head (full) - floating-point Z-buffer" alt="" loading="lazy" />
+&lt;figcaption>African head (full) - floating-point Z-buffer&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>&lt;figure>
+&lt;img src="../HW_5_find_the_bug_10.png" title="African head (full) - wireframe" alt="" loading="lazy" />
+&lt;figcaption>African head (full) - wireframe&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>&lt;figure>
+&lt;img src="../HW_5_find_the_bug_11.png" title="African head (full) - random solid color" alt="" loading="lazy" />
+&lt;figcaption>African head (full) - random solid color&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>&lt;figure>
+&lt;img src="../HW_5_find_the_bug_12.png" title="African head (full) - Lerp" alt="" loading="lazy" />
+&lt;figcaption>African head (full) - Lerp&lt;/figcaption>
+&lt;/figure>&lt;/p>
 &lt;/div>
 &lt;/details>
 &lt;h2>Custom Features&lt;span class="hx:absolute hx:-mt-20" id="custom-features">&lt;/span>
