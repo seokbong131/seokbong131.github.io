@@ -5,7 +5,19 @@ I’ve seen in theaters
 &lt;/p>
 &lt;div class="hextra-cards hx:mt-4 hx:gap-4 hx:grid not-prose" style="--hextra-cards-grid-cols: 3;">
 &lt;a
-class="hextra-card hx:group hx:flex hx:flex-col hx:justify-start hx:overflow-hidden hx:rounded-lg hx:border hx:border-gray-200 hx:text-current hx:no-underline hx:dark:shadow-none hx:hover:shadow-gray-100 hx:dark:hover:shadow-none hx:shadow-gray-100 hx:active:shadow-sm hx:active:shadow-gray-200 hx:transition-all hx:duration-200 hx:hover:border-gray-300 hx:bg-gray-100 hx:shadow-sm hx:dark:border-neutral-700 hx:dark:bg-neutral-800 hx:dark:text-gray-50 hx:hover:shadow-lg hx:dark:hover:border-neutral-500 hx:dark:hover:bg-neutral-700"href="https://www.imdb.com/title/tt11378946/mediaviewer/rm71685634/?ref_=ttmi_mi_9_3"
+class="hextra-card hx:group hx:flex hx:flex-col hx:justify-start hx:overflow-hidden hx:rounded-lg hx:border hx:border-gray-200 hx:text-current hx:no-underline hx:dark:shadow-none hx:hover:shadow-gray-100 hx:dark:hover:shadow-none hx:shadow-gray-100 hx:active:shadow-sm hx:active:shadow-gray-200 hx:transition-all hx:duration-200 hx:hover:border-gray-300 hx:bg-gray-100 hx:shadow-sm hx:dark:border-neutral-700 hx:dark:bg-neutral-800 hx:dark:text-gray-50 hx:hover:shadow-lg hx:dark:hover:border-neutral-500 hx:dark:hover:bg-neutral-700"href="https://www.imdb.com/title/tt30825738/mediaviewer/rm3495286018/?ref_=ttmi_mi_1_1"
+target="_blank" rel="noreferrer">&lt;img
+alt="Star Wars: The Mandalorian and Grogu"
+class="hextra-card-image"
+loading="lazy"
+decoding="async"
+src="https://seokbong131.github.io/life/movie/Star_Wars_The_Mandalorian_and_Grogu_hu_9de06dfa363f4ad1.webp"
+width="800"
+height="335"
+style="object-fit:cover; aspect-ratio:16/9;"
+/>&lt;span class="hextra-card-icon hx:flex hx:font-semibold hx:items-start hx:gap-2 hx:p-4 hx:text-gray-700 hx:hover:text-gray-900 hx:dark:text-neutral-200 hx:dark:hover:text-neutral-50">Star Wars: The Mandalorian and Grogu&lt;/span>&lt;/a>
+&lt;a
+class="hextra-card hx:group hx:flex hx:flex-col hx:justify-start hx:overflow-hidden hx:rounded-lg hx:border hx:border-gray-200 hx:text-current hx:no-underline hx:dark:shadow-none hx:hover:shadow-gray-100 hx:dark:hover:shadow-none hx:shadow-gray-100 hx:active:shadow-sm hx:active:shadow-gray-200 hx:transition-all hx:duration-200 hx:hover:border-gray-300 hx:bg-gray-100 hx:shadow-sm hx:dark:border-neutral-700 hx:dark:bg-neutral-800 hx:dark:text-gray-50 hx:hover:shadow-lg hx:dark:hover:border-neutral-500 hx:dark:hover:bg-neutral-700"href="https://www.imdb.com/title/tt11378946/mediaviewer/rm71685634/?ref_=ttmi_mi_10_1"
 target="_blank" rel="noreferrer">&lt;img
 alt="Michael"
 class="hextra-card-image"
@@ -29,15 +41,15 @@ height="400"
 style="object-fit:cover; aspect-ratio:16/9;"
 />&lt;span class="hextra-card-icon hx:flex hx:font-semibold hx:items-start hx:gap-2 hx:p-4 hx:text-gray-700 hx:hover:text-gray-900 hx:dark:text-neutral-200 hx:dark:hover:text-neutral-50">Project Hail Mary&lt;/span>&lt;/a>
 &lt;a
-class="hextra-card hx:group hx:flex hx:flex-col hx:justify-start hx:overflow-hidden hx:rounded-lg hx:border hx:border-gray-200 hx:text-current hx:no-underline hx:dark:shadow-none hx:hover:shadow-gray-100 hx:dark:hover:shadow-none hx:shadow-gray-100 hx:active:shadow-sm hx:active:shadow-gray-200 hx:transition-all hx:duration-200 hx:hover:border-gray-300 hx:bg-gray-100 hx:shadow-sm hx:dark:border-neutral-700 hx:dark:bg-neutral-800 hx:dark:text-gray-50 hx:hover:shadow-lg hx:dark:hover:border-neutral-500 hx:dark:hover:bg-neutral-700"href="https://www.imdb.com/title/tt28650488/mediaviewer/rm1096796162/?ref_=ttmi_mi_46_1"
+class="hextra-card hx:group hx:flex hx:flex-col hx:justify-start hx:overflow-hidden hx:rounded-lg hx:border hx:border-gray-200 hx:text-current hx:no-underline hx:dark:shadow-none hx:hover:shadow-gray-100 hx:dark:hover:shadow-none hx:shadow-gray-100 hx:active:shadow-sm hx:active:shadow-gray-200 hx:transition-all hx:duration-200 hx:hover:border-gray-300 hx:bg-gray-100 hx:shadow-sm hx:dark:border-neutral-700 hx:dark:bg-neutral-800 hx:dark:text-gray-50 hx:hover:shadow-lg hx:dark:hover:border-neutral-500 hx:dark:hover:bg-neutral-700"href="https://www.imdb.com/title/tt28650488/mediaviewer/rm156751618/?ref_=ttmi_mi_78_1"
 target="_blank" rel="noreferrer">&lt;img
 alt="The Super Mario Galaxy Movie"
 class="hextra-card-image"
 loading="lazy"
 decoding="async"
-src="https://seokbong131.github.io/life/movie/The_Super_Mario_Galaxy_Movie_hu_1fd1b218b6bdc36d.webp"
+src="https://seokbong131.github.io/life/movie/The_Super_Mario_Galaxy_Movie_hu_a72e66eb09b4887a.webp"
 width="800"
-height="343"
+height="335"
 style="object-fit:cover; aspect-ratio:16/9;"
 />&lt;span class="hextra-card-icon hx:flex hx:font-semibold hx:items-start hx:gap-2 hx:p-4 hx:text-gray-700 hx:hover:text-gray-900 hx:dark:text-neutral-200 hx:dark:hover:text-neutral-50">The Super Mario Galaxy Movie&lt;/span>&lt;/a>
 &lt;a
